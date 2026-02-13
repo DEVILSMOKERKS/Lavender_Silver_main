@@ -1,0 +1,459 @@
+/* Plan Controller Center Styles */
+.admin-plan-center-controller {
+  min-height: 100vh;
+  padding: 30px 20px;
+}
+
+.admin-plan-center-header {
+  margin-bottom: 32px;
+}
+
+.admin-plan-center-title {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #000000;
+  padding-bottom: 40px;
+}
+
+.admin-plan-center-controls {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #0000001A;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.admin-plan-center-search-container {
+  position: relative;
+  /* flex: 1; */
+  min-width: 337px;
+}
+
+.admin-plan-center-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: #9ca3af;
+}
+
+.admin-plan-center-search-input {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  padding: 6px 12px 6px 40px;
+  border: 1px solid #00000024;
+  border-radius: 4px;
+  font-size: 10px;
+  color: #00000066;
+  background: white;
+  transition: border-color 0.2s ease;
+}
+
+.admin-plan-center-search-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.admin-plan-center-search-input::placeholder {
+  color: #9ca3af;
+}
+
+.admin-plan-center-filter-dropdown {
+  position: relative;
+}
+
+.admin-plan-center-filter-select {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  appearance: none;
+  padding: 8px 18px 8px 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 10px;
+  color: #374151;
+  background: white;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+  min-width: 86px;
+}
+
+.admin-plan-center-filter-select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.admin-plan-center-dropdown-icon {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+.admin-plan-center-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.admin-plan-center-export-btn {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  gap: 8px;
+  padding: 0 8px;
+  background: white;
+  color: #374151;
+  border: 1px solid #0E593C;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.admin-plan-center-export-btn:hover {
+  background: #f9fafb;
+  border-color: #d1d5db;
+}
+
+
+.admin-plan-center-stats-grid {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.admin-plan-center-stat-card {
+  width: 100%;
+  background: white;
+  border-radius: 11px;
+  padding: 20px;
+  /* border: 1px solid #00000042; */
+  box-shadow: 0 1px 3px #00000042;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-plan-center-stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.admin-plan-center-stat-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.admin-plan-center-stat-text {
+  flex: 1;
+}
+
+.admin-plan-center-stat-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #000000CC;
+}
+
+.admin-plan-center-stat-value {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #000000;
+}
+
+.admin-plan-center-stat-icon {
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-plan-center-stat-img {
+  height: 20px;
+  width: 20px;
+}
+
+.admin-plan-center-stat-icon-purple {
+  background: #ede9fe;
+  color: #7c3aed;
+}
+
+.admin-plan-center-stat-icon-blue {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.admin-plan-center-stat-icon-green {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.admin-plan-center-stat-icon-pink {
+  background: #fce7f3;
+  color: #ec4899;
+}
+
+.admin-plan-center-section {
+  margin-bottom: 32px;
+}
+
+.admin-plan-center-section-title {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.admin-plan-center-table-container {
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.admin-plan-center-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* border-radius: 6px; */
+}
+
+.admin-plan-center-data-table th {
+  background: #F5F2E1;
+  color: #000000;
+  padding: 16px 12px;
+  text-align: left;
+  border-bottom: 1px solid #00000033;
+
+  font-family: 'Crimson Pro', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.admin-plan-center-th-dis {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.admin-plan-center-data-table td {
+  font-family: 'Crimson Pro', serif;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: #000000;
+  padding: 14px 19px;
+  border-bottom: 1px solid #00000033;
+}
+
+.admin-plan-center-data-table tr:hover {
+  background: #f9fafb;
+}
+
+.admin-plan-center-data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-plan-center-user-name-cell {
+  font-weight: 400;
+}
+
+.admin-plan-center-amount-cell {
+  font-weight: 600;
+}
+
+.admin-plan-center-months-cell {
+  font-weight: 600;
+}
+
+.admin-plan-center-voucher-cell {
+  font-weight: 600;
+}
+
+.admin-plan-center-redemption-cell {
+  font-weight: 400;
+}
+
+
+.admin-plan-center-request-cell {
+  color: #6b7280;
+}
+
+.admin-plan-center-status-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 400;
+
+  font-family: 'Crimson Pro', serif;
+  font-style: normal;
+  line-height: 10px;
+  letter-spacing: 0.03em;
+}
+
+.admin-plan-center-status-completed {
+  background: #D9FFEE;
+  color: #0E593C;
+}
+
+.admin-plan-center-status-active {
+  background: #FFEED0;
+  color: #BA8B23;
+}
+
+.admin-plan-center-status-approved {
+  background: #D9FFEE;
+  color: #0E593C;
+}
+
+.admin-plan-center-status-pending {
+  background: #FFEED0;
+  color: #BA8B23;
+}
+
+.admin-plan-center-status-default {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.admin-plan-center-actions-cell {
+  text-align: center;
+}
+
+.admin-plan-center-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.admin-plan-center-action-btn:hover {
+  background: #f3f4f6;
+}
+
+.admin-plan-center-delete-btn {
+  color: #6b7280;
+}
+
+.admin-plan-center-delete-btn:hover {
+  color: #dc2626;
+  border-color: #dc2626;
+}
+
+/* Loading and Error States */
+.admin-plan-center-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  text-align: center;
+}
+
+.admin-plan-center-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f4f6;
+  border-top: 4px solid #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.admin-plan-center-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  text-align: center;
+  color: #ef4444;
+}
+
+.admin-plan-center-error p {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.admin-plan-center-error button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.admin-plan-center-error button:hover {
+  background-color: #2563eb;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .admin-plan-center-controller {
+    padding: 16px;
+  }
+
+  .admin-plan-center-title {
+    font-size: 24px;
+  }
+
+
+  .admin-plan-center-table-container {
+    overflow-x: auto;
+  }
+
+  .admin-plan-center-data-table {
+    min-width: 800px;
+  }
+}

@@ -1,0 +1,760 @@
+.admin-wishlist-moni-container {
+  background: #f7f7f7;
+  padding: 32px 16px;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+}
+
+.admin-wishlist-moni-title {
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #000000;
+  letter-spacing: 3%;
+  text-align: left;
+}
+
+.admin-wishlist-moni-cards-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.admin-wishlist-moni-card {
+  background: #fff;
+  border-radius: 11px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  padding: 12px 14px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.admin-wishlist-moni-card-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f6f9;
+  box-shadow: 0 0 3px #0000002B;
+}
+
+.admin-wishlist-moni-card-heart {
+  background: #e6f7f1;
+  color: #2ecc71;
+}
+
+.admin-wishlist-moni-card-trend {
+  background: #eaf1fb;
+  color: #3b82f6;
+}
+
+.admin-wishlist-moni-card-box {
+  background: #fffbe6;
+  color: #fbbf24;
+}
+
+.admin-wishlist-moni-card-alert {
+  background: #fff0f0;
+  color: #f87171;
+}
+
+.admin-wishlist-moni-card-content {
+  /* flex: 1; */
+  text-align: left;
+}
+
+.admin-wishlist-moni-card-label {
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.admin-wishlist-moni-card-value {
+  font-size: 20px;
+  font-family: "Crimson Pro", serif;
+  font-weight: 600;
+  color: #000000;
+}
+
+.admin-wishlist-moni-card-desc {
+  font-size: 12px;
+  color: #888;
+  margin-top: 2px;
+}
+
+.admin-wishlist-moni-card-change {
+  font-size: 12px;
+  font-family: "Open Sans", sans-;
+  font-weight: 600;
+  color: #000000CC;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.admin-wishlist-moni-card-change.up {
+  color: #16a34a;
+}
+
+.admin-wishlist-moni-card-change.down {
+  color: #dc2626;
+}
+
+.admin-wishlist-moni-filters-row {
+  background-color: #FFFFFF;
+  display: flex;
+  gap: 24px;
+  align-items: flex-end;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  padding: 14px;
+  text-align: left;
+  border: 1px solid #0000001A;
+  border-radius: 6px;
+}
+
+.admin-wishlist-moni-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-wishlist-moni-filter-group label {
+  font-size: 11px;
+  color: #000000;
+  font-family: "Open Sans", sans-;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+.admin-wishlist-moni-select {
+  padding: 7px 14px;
+  border-radius: 4px;
+  border: 1px solid #00000024;
+  font-family: "Open Sans", sans-;
+  font-weight: 400;
+  background: #fff;
+  font-size: 11px;
+  color: #222;
+}
+
+.admin-wishlist-moni-export-btn {
+  margin-left: auto;
+  background: #fff;
+  border: 1px solid #0E593C;
+  color: #000000;
+  border-radius: 4px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-family: "Open Sans", sans-;
+  font-weight: 600;
+  letter-spacing: 3%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.admin-wishlist-moni-export-btn:hover {
+  background: #0f5132;
+  color: #fff;
+}
+
+.admin-wishlist-moni-export-icon {
+  font-size: 1.2em;
+}
+
+.admin-wishlist-moni-table-wrapper {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  padding: 0 0 12px 0;
+  margin-top: 8px;
+}
+
+.admin-wishlist-moni-table-title {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Crimson Pro", serif;
+  color: #222;
+  padding: 18px 24px 10px 24px;
+  text-align: left;
+}
+
+.admin-wishlist-moni-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 1rem;
+}
+
+.admin-wishlist-moni-table thead tr {
+  background: #F5F2E1;
+}
+
+.admin-wishlist-moni-table th,
+.admin-wishlist-moni-table td {
+  padding: 12px 14px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Crimson Pro", serif;
+  color: #000000;
+  border-bottom: 1px solid #00000033;
+}
+
+.admin-wishlist-moni-table th {
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  font-family: "Crimson Pro", serif;
+  border-bottom: 1.5px solid #00000033;
+}
+
+.admin-wishlist-moni-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  background: #fff;
+}
+
+.admin-wishlist-moni-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.admin-wishlist-moni-heart {
+  color: #e11d48;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.admin-wishlist-moni-green {
+  color: #16a34a;
+  font-weight: 500;
+}
+
+.admin-wishlist-moni-trend-up {
+  color: #16a34a;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 24px 0 !important;
+}
+
+.admin-wishlist-moni-trend-down {
+  color: #dc2626;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.admin-wishlist-moni-trend-stable {
+  color: #888;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.admin-wishlist-moni-status {
+  padding: 3px 10px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-family: "Crimson Pro", serif;
+  letter-spacing: 3%;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.admin-wishlist-moni-status.out-stock {
+  background: #F9E4E6;
+  color: #C53C43;
+}
+
+.admin-wishlist-moni-status.low-stock {
+  color: #f59e0b;
+}
+
+.admin-wishlist-moni-status.in-stock {
+  background: #D9FFEE;
+  color: #0E593C;
+}
+
+.admin-wishlist-moni-action-btn {
+  background: #fff;
+  border: 1px solid #0f5132;
+  color: #0f5132;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 9px;
+  font-family: "Open Sans", sans-;
+  font-weight: 400;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  display: flex;
+  align-items: center;
+}
+
+.admin-wishlist-moni-action-btn.restock {
+  background: #0E593C;
+  color: #FFFFFF !important;
+}
+
+.admin-wishlist-moni-action-btn:hover {
+  background: #0f5132;
+  color: #fff;
+}
+
+.admin-wishlist-moni-action-btn.restock {
+  border-color: #dc2626;
+  color: #dc2626;
+}
+
+.admin-wishlist-moni-action-btn.restock:hover {
+  background: #dc2626;
+  color: #fff;
+}
+
+/* Modal styles for Product View Popup */
+.wishlist-moni-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.wishlist-moni-modal-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 32px 28px 24px 28px;
+  min-width: 320px;
+  max-width: 800px;
+  width: 90%;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: relative;
+  margin: auto;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.wishlist-moni-modal-content.wishlist-moni-invoice-modal {
+  width: 80vw !important;
+  min-width: 80vw;
+  max-width: 80vw !important;
+  height: 85vh;
+  max-height: 85vh;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.wishlist-moni-modal-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.wishlist-moni-modal-btn {
+  padding: 9px 18px;
+  border-radius: 6px;
+  border: none;
+  background: #16784f;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.wishlist-moni-modal-btn:hover {
+  background: #115c43;
+}
+
+.wishlist-moni-modal-btn-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  padding: 16px 24px;
+  border-top: 1px solid #e9ecef;
+  background: #fff;
+  margin-top: auto;
+}
+
+/* Invoice Style Modal - Exact Table Format - Scrollable Content */
+.wishlist-moni-invoice-order-items-section {
+  padding: 24px;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  gap: 24px;
+}
+
+/* Fixed Header */
+.wishlist-moni-invoice-header-fixed {
+  padding: 20px 24px;
+  background: #fff;
+  border-bottom: 2px solid #e9ecef;
+  flex-shrink: 0;
+}
+
+/* Order Items Title */
+.wishlist-moni-invoice-order-items-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #7c2d4a;
+  margin: 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #7c2d4a;
+}
+
+/* Table Container */
+.wishlist-moni-invoice-table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 24px;
+}
+
+/* Order Items Table */
+.wishlist-moni-invoice-order-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 13px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.wishlist-moni-invoice-order-table thead {
+  background: #7c2d4a;
+}
+
+.wishlist-moni-invoice-order-table th {
+  padding: 12px 10px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.wishlist-moni-invoice-order-table th:last-child {
+  border-right: none;
+}
+
+.wishlist-moni-invoice-order-table tbody tr {
+  border-bottom: 1px solid #e9ecef;
+  transition: background 0.2s;
+}
+
+.wishlist-moni-invoice-order-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.wishlist-moni-invoice-order-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.wishlist-moni-invoice-order-table td {
+  padding: 12px 10px;
+  vertical-align: top;
+  color: #333;
+  font-size: 13px;
+  border-right: 1px solid #f0f0f0;
+}
+
+.wishlist-moni-invoice-order-table td:last-child {
+  border-right: none;
+}
+
+/* Image Cell */
+.wishlist-moni-invoice-image-cell {
+  text-align: center;
+  width: 80px;
+}
+
+.wishlist-moni-invoice-item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.wishlist-moni-invoice-item-image-placeholder {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+/* Product Cell */
+.wishlist-moni-invoice-product-cell {
+  min-width: 200px;
+}
+
+.wishlist-moni-invoice-product-name {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+
+.wishlist-moni-invoice-product-tunch {
+  font-size: 11px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Rate and Total Cells */
+.wishlist-moni-invoice-rate-cell,
+.wishlist-moni-invoice-total-cell {
+  text-align: right;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+
+.wishlist-moni-invoice-total-cell {
+  color: #7c2d4a;
+  font-size: 14px;
+}
+
+/* Price Breakdown Section */
+.wishlist-moni-invoice-price-breakdown {
+  margin-top: auto;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  margin-bottom: 20px;
+}
+
+.wishlist-moni-invoice-breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.wishlist-moni-invoice-breakdown-row:last-child {
+  border-bottom: none;
+}
+
+.wishlist-moni-invoice-breakdown-label {
+  color: #666;
+  font-weight: 500;
+}
+
+.wishlist-moni-invoice-breakdown-value {
+  color: #333;
+  font-weight: 600;
+}
+
+.wishlist-moni-invoice-discount-breakdown {
+  color: #28a745;
+}
+
+.wishlist-moni-invoice-breakdown-final {
+  border-top: 2px solid #7c2d4a;
+  border-bottom: 2px solid #7c2d4a;
+  padding: 12px 0;
+  margin-top: 8px;
+}
+
+.wishlist-moni-invoice-final-breakdown {
+  color: #7c2d4a;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Wishlist Users Section */
+.wishlist-moni-invoice-users-section {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  margin-bottom: 20px;
+}
+
+.wishlist-moni-invoice-users-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #7c2d4a;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #7c2d4a;
+}
+
+.wishlist-moni-invoice-users-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.wishlist-moni-invoice-user-item {
+  padding: 12px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+}
+
+.wishlist-moni-invoice-user-item p {
+  margin: 4px 0;
+  font-size: 13px;
+  color: #333;
+}
+
+.wishlist-moni-invoice-user-item p strong {
+  color: #7c2d4a;
+  margin-right: 8px;
+}
+
+/* Custom scrollbar */
+.wishlist-moni-invoice-order-items-section::-webkit-scrollbar {
+  width: 8px;
+}
+
+.wishlist-moni-invoice-order-items-section::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.wishlist-moni-invoice-order-items-section::-webkit-scrollbar-thumb {
+  background: #7c2d4a;
+  border-radius: 4px;
+}
+
+.wishlist-moni-invoice-order-items-section::-webkit-scrollbar-thumb:hover {
+  background: #5a1f35;
+}
+
+/* Additional Product Information Section */
+.wishlist-moni-invoice-additional-info {
+  margin-top: 24px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.wishlist-moni-invoice-section-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #7c2d4a;
+  margin: 0 0 16px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #7c2d4a;
+}
+
+.wishlist-moni-invoice-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.wishlist-moni-invoice-info-group {
+  background: #fff;
+  padding: 16px;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+}
+
+.wishlist-moni-invoice-info-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.wishlist-moni-invoice-info-group h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7c2d4a;
+  margin: 0 0 12px 0;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.wishlist-moni-invoice-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 13px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.wishlist-moni-invoice-info-row:last-child {
+  border-bottom: none;
+}
+
+.wishlist-moni-invoice-info-row .info-label {
+  color: #666;
+  font-weight: 500;
+}
+
+.wishlist-moni-invoice-info-row .info-value {
+  color: #333;
+  font-weight: 600;
+  text-align: right;
+}
+
+.wishlist-moni-invoice-description {
+  padding: 12px;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+/* Ensure proper scrolling structure */
+.wishlist-moni-invoice-modal > * {
+  flex-shrink: 0;
+}
+
+.wishlist-moni-invoice-modal .wishlist-moni-invoice-order-items-section {
+  flex: 1 1 auto;
+  min-height: 0;
+}

@@ -1,0 +1,215 @@
+.admin-sidebar {
+    width: 270px;
+    background: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    transition: transform 0.25s cubic-bezier(.4, 0, .2, 1);
+    transform: translateX(0);
+    /* Ensure children can flex */
+}
+.submenu-arrow{
+    text-align: center;
+}
+.admin-sidebar-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e04c;
+    flex-shrink: 0; /* Prevent logo from shrinking */
+}
+
+.admin-sidebar-logo img {
+    width: 66px;
+    height: 43px;
+    margin-bottom: 12px;
+    margin-top: 8px;
+}
+.admin-sidebar-nav{
+    border-right: 1px solid #e0e0e0;
+    width: 280px;
+    padding: 20px 15px;
+    flex: 1 1 0;
+    overflow-y: auto;
+    min-height: 0;
+}
+
+.admin-sidebar-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #222;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.admin-sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.admin-sidebar-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    color: #222;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 2px;
+    transition: background 0.18s, color 0.18s;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    font-weight: 500;
+    background: none;
+    position: relative;
+}
+
+.admin-sidebar-nav-item.active,
+.admin-sidebar-nav-item:hover {
+    background: #1a7f64;
+    color: #fff;
+}
+
+.admin-sidebar-nav-item span {
+    display: block;
+}
+
+.admin-sidebar-icon {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    min-height: 24px;
+    font-size: 1.1rem;
+    margin-right: 6px;
+}
+
+.admin-sidebar-submenu {
+    list-style: none;
+    padding: 0 0 0 32px;
+    margin: 0 0 2px 0;
+}
+
+.admin-sidebar-submenu-item {
+    font-size: 0.97rem;
+    color: #222;
+    padding: 6px 0 6px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 0;
+    font-weight: 400;
+    background: none;
+    transition: background 0.18s, color 0.18s;
+    margin-left: 46px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.admin-sidebar-submenu-item.active,
+.admin-sidebar-submenu-item:hover {
+    background: #e6f4f1;
+    color: #1a7f64;
+}
+
+.admin-sidebar-nav-item span:last-child {
+    flex: 1;
+    text-align: left;
+    font-weight: 500;
+}
+
+.admin-sidebar-nav-item .submenu-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    min-width: 24px;
+    height: 100%;
+    color: #888;
+}
+
+/* Remove boldness and extra spacing from submenu */
+.admin-sidebar-submenu-item span {
+    font-weight: 400;
+    font-size: 0.97rem;
+}
+
+.admin-sidebar-submenu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 16px;
+    min-height: 16px;
+    color: #666;
+}
+
+.admin-sidebar-submenu-item.active .admin-sidebar-submenu-icon,
+.admin-sidebar-submenu-item:hover .admin-sidebar-submenu-icon {
+    color: #1a7f64;
+}
+
+.admin-sidebar-close {
+    display: none;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #222;
+    cursor: pointer;
+    z-index: 1300;
+}
+
+.admin-sidebar-overlay {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .admin-sidebar {
+        width: 80vw;
+        max-width: 320px;
+        transform: translateX(-100%);
+        box-shadow: 2px 0 8px rgba(0, 0, 0, 0.08);
+        z-index: 1201;
+    }
+    .admin-sidebar.open {
+        transform: translateX(0);
+    }
+    .admin-sidebar-close {
+        display: block;
+    }
+    .admin-sidebar-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.18);
+        z-index: 1200;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s;
+    }
+    .admin-sidebar-overlay.open {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .admin-sidebar-logo{
+        display: none;
+    }
+    .admin-sidebar-nav {
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,1265 @@
+/* CartManagement Main Container */
+.admincartManagement-container {
+  background: #f7f7f7;
+  min-height: 100vh;
+  padding: 32px 0;
+}
+
+.admincartManagement-header-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding: 0 24px;
+  gap: 16px;
+}
+
+.admincartManagement-title {
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+  font-family: var(--font-primary);
+  margin: 0;
+}
+
+.admincartManagement-header-search-group {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.admincartManagement-search-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 24px;
+  border: 1.5px solid #e0ece8;
+  padding: 2px 16px 2px 16px;
+  gap: 6px;
+  box-shadow: 0 0 4px 0 #e0ece8;
+  position: relative;
+}
+
+.admincartManagement-search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 18px;
+  width: 300px;
+  color: #222;
+  padding: 0px 0;
+}
+
+.admincartManagement-search-icon {
+  color: #111;
+  font-size: 20px;
+  margin-left: 4px;
+}
+
+.admincartManagement-summary-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+  padding: 0 0px;
+}
+
+.admincartManagement-summary-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  flex: 1 1 0;
+  min-width: 180px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.admincartManagement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0 0px;
+}
+
+.admincartManagement-consult-card {
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #ededed;
+  box-shadow: 0 0 0 4px #f7f7f7, 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 18px 18px 12px 18px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.admincartManagement-consult-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.admincartManagement-consult-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.admincartManagement-card-icon {
+  color: #16784f;
+  font-size: 22px;
+}
+
+.admincartManagement-consult-id {
+  font-weight: 600;
+  margin-right: 8px;
+  font-size: 18px;
+  color: black;
+}
+
+.admincartManagement-consult-status {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 2px 12px;
+  background: #e6f7ef;
+  color: #16784f;
+}
+
+.admincartManagement-edit-actions-mobile {
+  display: none;
+}
+
+.admincartManagement-consult-col-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  text-align: start;
+  color: black;
+}
+
+.admincartManagement-consult-detail {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #444;
+}
+
+.admincartManagement-service-pill {
+  margin-bottom: 6px;
+}
+
+.serviceName {
+  color: black;
+  font-size: 12px;
+}
+
+.admincartManagement-consult-reschedule {
+  background: #fff;
+  color: #115c43;
+  border: 1.5px solid #115c43;
+  border-radius: 6px;
+  padding: 6px 22px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Cart Item Styles */
+.admincartManagement-cart-item {
+  background: #f8f8f3;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  transition: all 0.2s ease;
+}
+
+.admincartManagement-cart-item:hover {
+  background: #f0f0eb;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admincartManagement-cart-item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admincartManagement-cart-item-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+  flex: 1;
+}
+
+.admincartManagement-cart-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admincartManagement-view-icon {
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.admincartManagement-view-icon:hover {
+  background: #e6f7ef;
+  transform: scale(1.1);
+}
+
+.admincartManagement-delete-icon {
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.admincartManagement-delete-icon:hover {
+  background: #fbeaea;
+  transform: scale(1.1);
+}
+
+/* View All Button */
+.admincartManagement-view-all-btn {
+  background: none;
+  border: none;
+  color: #16784f;
+  cursor: pointer;
+  font-size: 12px;
+  text-decoration: underline;
+  margin-top: 5px;
+  padding: 4px 0;
+  transition: all 0.2s ease;
+}
+
+.admincartManagement-view-all-btn:hover {
+  color: #115c43;
+  text-decoration: none;
+}
+
+/* View All Modal Items */
+.admincartManagement-view-all-item {
+  background: #f8f8f3;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 8px;
+  transition: all 0.2s ease;
+}
+
+.admincartManagement-view-all-item:hover {
+  background: #f0f0eb;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admincartManagement-view-all-item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.admincartManagement-view-all-item-details {
+  flex: 1;
+}
+
+.admincartManagement-view-all-item-name {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.admincartManagement-view-all-item-specs {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 4px;
+}
+
+.admincartManagement-view-all-item-specs span {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.admincartManagement-view-all-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.admincartManagement-view-all-item-price {
+  font-weight: 700;
+  font-size: 14px;
+  color: #16784f;
+}
+
+.admincartManagement-view-all-delete-icon {
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.admincartManagement-view-all-delete-icon:hover {
+  background: #fbeaea;
+  transform: scale(1.1);
+}
+
+/* View Item Modal Styles */
+.admincartManagement-view-item-details {
+  margin-bottom: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.admincartManagement-view-item-modal {
+  width: 70vw;
+  height: 80vh;
+  max-width: 1200px;
+  max-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Invoice Style Modal - Exact Table Format */
+.admincartManagement-invoice-table-modal {
+  width: 80vw !important;
+  min-width: 80vw;
+  height: auto;
+  max-height: auto;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.admincartManagement-invoice-table-modal .admincartManagement-modal-btn-row {
+  flex-shrink: 0;
+  padding: 16px 24px;
+  border-top: 1px solid #e9ecef;
+  background: #fff;
+  margin-top: auto;
+}
+
+/* Website URL Header */
+.admincartManagement-invoice-website-header {
+  padding: 12px 20px;
+  background: #f8f9fa;
+  border-left: 4px solid #7c2d4a;
+  border-radius: 4px 0 0 4px;
+  font-size: 13px;
+  color: #333;
+  font-weight: 500;
+  margin: 20px 24px 16px 24px;
+}
+
+/* Order Items Section */
+.admincartManagement-invoice-order-items-section {
+  padding: 0 24px;
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.admincartManagement-invoice-order-items-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #7c2d4a;
+  margin: 0 0 16px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #7c2d4a;
+}
+
+/* Table Container */
+.admincartManagement-invoice-table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 24px;
+}
+
+/* Order Items Table */
+.admincartManagement-invoice-order-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 13px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.admincartManagement-invoice-order-table thead {
+  background: #7c2d4a;
+}
+
+.admincartManagement-invoice-order-table th {
+  padding: 12px 10px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.admincartManagement-invoice-order-table th:last-child {
+  border-right: none;
+}
+
+.admincartManagement-invoice-order-table tbody tr {
+  border-bottom: 1px solid #e9ecef;
+  transition: background 0.2s;
+}
+
+.admincartManagement-invoice-order-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.admincartManagement-invoice-order-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.admincartManagement-invoice-order-table td {
+  padding: 12px 10px;
+  vertical-align: top;
+  color: #333;
+  font-size: 13px;
+  border-right: 1px solid #f0f0f0;
+}
+
+.admincartManagement-invoice-order-table td:last-child {
+  border-right: none;
+}
+
+/* Image Cell */
+.admincartManagement-invoice-image-cell {
+  text-align: center;
+  width: 80px;
+}
+
+.admincartManagement-invoice-item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.admincartManagement-invoice-item-image-placeholder {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+/* Product Cell */
+.admincartManagement-invoice-product-cell {
+  min-width: 200px;
+}
+
+.admincartManagement-invoice-product-name {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+
+.admincartManagement-invoice-product-tunch {
+  font-size: 11px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Rate and Total Cells */
+.admincartManagement-invoice-rate-cell,
+.admincartManagement-invoice-total-cell {
+  text-align: right;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+
+.admincartManagement-invoice-total-cell {
+  color: #7c2d4a;
+  font-size: 14px;
+}
+
+/* Price Breakdown Section */
+.admincartManagement-invoice-price-breakdown {
+  margin-top: auto;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  margin-bottom: 20px;
+}
+
+.admincartManagement-invoice-breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.admincartManagement-invoice-breakdown-row:last-child {
+  border-bottom: none;
+}
+
+.admincartManagement-invoice-breakdown-label {
+  color: #666;
+  font-weight: 500;
+}
+
+.admincartManagement-invoice-breakdown-value {
+  color: #333;
+  font-weight: 600;
+}
+
+.admincartManagement-invoice-discount-breakdown {
+  color: #28a745;
+}
+
+.admincartManagement-invoice-breakdown-final {
+  border-top: 2px solid #7c2d4a;
+  border-bottom: 2px solid #7c2d4a;
+  padding: 12px 0;
+  margin-top: 8px;
+}
+
+.admincartManagement-invoice-final-breakdown {
+  color: #7c2d4a;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.admincartManagement-invoice-content {
+  padding: 32px;
+  height: 100%;
+  overflow-y: auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Custom scrollbar for invoice content */
+.admincartManagement-invoice-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.admincartManagement-invoice-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.admincartManagement-invoice-content::-webkit-scrollbar-thumb {
+  background: #16784f;
+  border-radius: 4px;
+}
+
+.admincartManagement-invoice-content::-webkit-scrollbar-thumb:hover {
+  background: #115c43;
+}
+
+/* Invoice Header */
+.admincartManagement-invoice-header-section {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 3px solid #16784f;
+}
+
+.admincartManagement-invoice-header {
+  text-align: center;
+}
+
+.admincartManagement-invoice-logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #16784f;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.admincartManagement-invoice-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.admincartManagement-invoice-subtitle {
+  font-size: 13px;
+  color: #666;
+  font-style: italic;
+}
+
+/* Invoice Details Section */
+.admincartManagement-invoice-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.admincartManagement-invoice-customer-info,
+.admincartManagement-invoice-item-info {
+  background: #f8f9fa;
+  padding: 16px;
+  border-radius: 8px;
+  border-left: 4px solid #16784f;
+}
+
+.admincartManagement-invoice-info-section {
+  margin-bottom: 0;
+}
+
+.admincartManagement-invoice-info-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #16784f;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #16784f;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.admincartManagement-invoice-info-content {
+  font-size: 13px;
+  color: #333;
+  line-height: 1.8;
+}
+
+.admincartManagement-invoice-info-content div {
+  margin-bottom: 4px;
+}
+
+/* Invoice Image Section */
+.admincartManagement-invoice-image-section {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 2px solid #e9ecef;
+  margin-bottom: 20px;
+}
+
+.admincartManagement-invoice-product-image {
+  max-width: 100%;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.admincartManagement-invoice-placeholder-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  gap: 12px;
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* Invoice Items Table */
+.admincartManagement-invoice-items-section {
+  margin-bottom: 20px;
+}
+
+.admincartManagement-invoice-items-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #16784f;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #16784f;
+  text-transform: uppercase;
+}
+
+.admincartManagement-invoice-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admincartManagement-invoice-items-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 13px;
+}
+
+.admincartManagement-invoice-items-table thead {
+  background: linear-gradient(135deg, #16784f 0%, #115c43 100%);
+  color: white;
+}
+
+.admincartManagement-invoice-items-table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.admincartManagement-invoice-items-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e9ecef;
+  vertical-align: top;
+}
+
+.admincartManagement-invoice-items-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.admincartManagement-invoice-product-name-cell strong {
+  color: #333;
+  font-size: 14px;
+}
+
+.admincartManagement-invoice-subcategory {
+  font-size: 11px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.admincartManagement-invoice-specs {
+  font-size: 12px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.admincartManagement-invoice-specs div {
+  margin-bottom: 2px;
+}
+
+.admincartManagement-invoice-price-cell,
+.admincartManagement-invoice-final-price-cell {
+  text-align: right;
+  font-weight: 500;
+}
+
+.admincartManagement-invoice-discount-cell {
+  text-align: center;
+}
+
+.admincartManagement-invoice-discount-badge {
+  background: #28a745;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.admincartManagement-invoice-final-price-cell {
+  color: #16784f;
+  font-size: 14px;
+}
+
+/* Invoice Totals Section */
+.admincartManagement-invoice-totals-section {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 2px solid #e9ecef;
+}
+
+.admincartManagement-invoice-totals-wrapper {
+  max-width: 400px;
+  margin-left: auto;
+}
+
+.admincartManagement-invoice-totals-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.admincartManagement-invoice-totals-row:last-child {
+  border-bottom: none;
+}
+
+.admincartManagement-invoice-totals-label {
+  color: #666;
+  font-weight: 500;
+}
+
+.admincartManagement-invoice-totals-value {
+  color: #333;
+  font-weight: 600;
+}
+
+.admincartManagement-invoice-discount-value {
+  color: #28a745;
+}
+
+.admincartManagement-invoice-totals-row-final {
+  border-top: 2px solid #16784f;
+  border-bottom: 2px solid #16784f;
+  padding: 14px 0;
+  margin-top: 8px;
+}
+
+.admincartManagement-invoice-final-total {
+  color: #16784f;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.admincartManagement-invoice-totals-row-quantity {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed #ddd;
+}
+
+/* Invoice Footer */
+.admincartManagement-invoice-footer {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 2px solid #e9ecef;
+  text-align: center;
+}
+
+.admincartManagement-invoice-footer-content {
+  color: #666;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.admincartManagement-invoice-footer-content strong {
+  color: #16784f;
+  font-size: 14px;
+}
+
+.admincartManagement-view-item-modal h3 {
+  margin: 0 0 20px 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222;
+  flex-shrink: 0;
+}
+
+.admincartManagement-view-item-modal .admincartManagement-view-item-details {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* Custom scrollbar for modal content */
+.admincartManagement-view-item-modal .admincartManagement-view-item-details::-webkit-scrollbar {
+  width: 6px;
+}
+
+.admincartManagement-view-item-modal .admincartManagement-view-item-details::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.admincartManagement-view-item-modal .admincartManagement-view-item-details::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.admincartManagement-view-item-modal .admincartManagement-view-item-details::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.admincartManagement-view-item-modal .admincartManagement-modal-btn-row {
+  flex-shrink: 0;
+  margin-top: 20px;
+}
+
+/* View All Item Image Styles */
+.admincartManagement-view-all-item-image-wrapper {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  margin-right: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admincartManagement-view-all-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.admincartManagement-view-all-item-image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9ecef;
+}
+
+.admincartManagement-view-item-section {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 0;
+  border-left: 4px solid #16784f;
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.admincartManagement-view-item-section h4 {
+  margin: 0 0 16px 0;
+  color: #16784f;
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #16784f;
+}
+
+.admincartManagement-view-item-section p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.admincartManagement-view-item-section p:last-child {
+  border-bottom: none;
+}
+
+.admincartManagement-view-item-section strong {
+  color: #16784f;
+  font-weight: 600;
+}
+
+/* Product Image Styles */
+.admincartManagement-view-item-image-section {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1;
+  height: fit-content;
+  position: sticky;
+  top: 0;
+}
+
+.admincartManagement-product-image {
+  max-width: 100%;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.admincartManagement-placeholder-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  width: 100%;
+  background: #e9ecef;
+  border-radius: 8px;
+  color: #6c757d;
+  font-style: italic;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .admincartManagement-summary-row {
+    width: 94vw;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 16px;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .admincartManagement-edit-actions-mobile {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin-top: -26px;
+    width: 100%;
+  }
+
+  .admincartManagement-consult-card {
+    border: 1px solid #00000033;
+    padding: 10px 15px 15px 10px;
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+
+  .admincartManagement-consult-status {
+    position: absolute;
+    right: 10px;
+  }
+
+  .admincartManagement-search-box input {
+    width: 200px;
+  }
+
+  .admincartManagement-cart-item-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .admincartManagement-cart-item-actions {
+    align-self: flex-end;
+  }
+
+  .admincartManagement-view-all-item-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .admincartManagement-view-all-item-actions {
+    align-self: flex-end;
+  }
+
+  /* View Item Modal - Mobile Responsive */
+  .admincartManagement-view-item-modal {
+    width: 95vw;
+    height: 85vh;
+    padding: 16px;
+  }
+
+  .admincartManagement-view-item-modal .admincartManagement-view-item-details {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .admincartManagement-view-item-image-section {
+    grid-column: 1;
+    position: relative;
+    padding: 15px;
+  }
+
+  .admincartManagement-product-image {
+    max-height: 250px;
+  }
+
+  .admincartManagement-view-item-section {
+    grid-column: 1;
+  }
+
+  /* Invoice Table Modal - Mobile Responsive */
+  .admincartManagement-invoice-table-modal {
+    width: 95vw;
+    height: 90vh;
+    padding: 0;
+  }
+
+  .admincartManagement-invoice-website-header {
+    margin: 16px 12px 12px 12px;
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+
+  .admincartManagement-invoice-order-items-section {
+    padding: 0 12px;
+  }
+
+  .admincartManagement-invoice-order-items-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .admincartManagement-invoice-order-table {
+    font-size: 11px;
+  }
+
+  .admincartManagement-invoice-order-table th,
+  .admincartManagement-invoice-order-table td {
+    padding: 8px 6px;
+    font-size: 11px;
+  }
+
+  .admincartManagement-invoice-order-table th {
+    font-size: 10px;
+  }
+
+  .admincartManagement-invoice-item-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .admincartManagement-invoice-item-image-placeholder {
+    width: 50px;
+    height: 50px;
+  }
+
+  .admincartManagement-invoice-price-breakdown {
+    padding: 16px;
+  }
+}
+
+/* Modal and Form Styles for CartManagement - Unique Classes */
+.admincartManagement-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.admincartManagement-modal-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 32px 28px 24px 28px;
+  min-width: 320px;
+  max-width: 500px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.admincartManagement-modal-content.admincartManagement-invoice-table-modal {
+  min-width: 80vw;
+  max-width: 80vw !important;
+  padding: 0;
+}
+
+.admincartManagement-modal-content.admincartManagement-view-item-modal {
+  min-width: auto;
+  max-width: none;
+  padding: 0;
+}
+
+.admincartManagement-modal-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.admincartManagement-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.admincartManagement-modal-input {
+  padding: 9px 12px;
+  border-radius: 6px;
+  border: 1.5px solid #e0ece8;
+  font-size: 1rem;
+  color: #222;
+  background: #fafbfc;
+  outline: none;
+  transition: border 0.2s;
+  width: 100%;
+  font-family: inherit;
+}
+
+.admincartManagement-modal-input:focus {
+  border-color: #16784f;
+}
+
+.admincartManagement-modal-btn {
+  padding: 9px 18px;
+  border-radius: 6px;
+  border: none;
+  background: #16784f;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.admincartManagement-modal-btn-secondary {
+  background: #e0ece8;
+  color: #222;
+}
+
+.admincartManagement-modal-btn:hover {
+  background: #115c43;
+}
+
+.admincartManagement-modal-btn-secondary:hover {
+  background: #d1dbe0;
+}
+
+.admincartManagement-modal-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.admincartManagement-modal-btn-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: flex-end;
+}

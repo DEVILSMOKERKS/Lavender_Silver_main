@@ -1,0 +1,312 @@
+.pvjMember-main {
+  padding: 0 20px;
+}
+
+.pvj-member-section {
+  width: 100%;
+  min-height: 260px;
+  border-radius: 12px;
+  margin: 24px 0;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 0 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pvj-member-bg-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: block;
+}
+
+.pvj-member-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  /* Ensure image loads quickly */
+  display: block;
+}
+
+.pvj-member-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 40px;
+  gap: 32px;
+  position: relative;
+  z-index: 1;
+}
+
+.pvj-member-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.pvj-gift-box {
+  width: 120px;
+  min-width: 100px;
+  max-width: 120px;
+  height: 120px;
+  max-height: 120px;
+  object-fit: contain;
+  margin-right: 8px;
+  /* Prevent layout shift */
+  aspect-ratio: 1 / 1;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+.pvj-member-text h2 {
+  font-family: "Cinzel", serif;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.pvj-elite {
+  font-family: 'Clicker Script', cursive;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 31px;
+  color: var(--white);
+  margin: 0 4px;
+  /* Reserve space to prevent layout shift when font loads */
+  display: inline-block;
+  min-width: 60px;
+  min-height: 35px;
+}
+
+.pvj-member-text p {
+  color: #fff;
+  font-size: 17px;
+  font-family: "Crimson Pro";
+  margin: 0;
+}
+
+.membmaininp {
+  width: 100%;
+}
+
+.pvj-member-right {
+  padding: 32px 32px 20px 32px;
+  /* min-width: 340px; */
+  /* max-width: 420px; */
+
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.pvj-member-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.pvj-member-input {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 1.5px solid var(--pvj-gold);
+  font-size: 1rem;
+  /* font-family: var(--font-body); */
+  font-family: "Open Sans", sans-serif;
+  outline: none;
+  margin-bottom: 8px;
+  background: #fff;
+  color: var(--text-dark);
+  transition: border 0.2s;
+}
+
+.pvj-member-input:focus {
+  border: 2px solid var(--pvj-gold);
+}
+
+.pvj-member-submit {
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--pvj-gold);
+  font-size: 1rem;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.pvj-member-submit:hover {
+  background: var(--pvj-gold);
+  color: var(--pvj-maroon);
+}
+
+.pvj-member-radio-group {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.pvj-radio-label {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  gap: 8px;
+}
+
+.pvj-radio-input {
+  display: none;
+}
+
+.pvj-custom-radio {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--pvj-gold);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+  position: relative;
+  background: transparent;
+  transition: border 0.2s;
+}
+
+.pvj-radio-input:checked+.pvj-custom-radio {
+  background: var(--white);
+  /* box-shadow: 0 0 0 3px rgba(197,169,126,0.18); */
+}
+
+@media (max-width: 900px) {
+  .pvj-member-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 16px;
+    gap: 24px;
+  }
+
+  .pvj-member-right {
+    min-width: unset;
+    max-width: unset;
+    width: 100%;
+    /* margin-top: 18px; */
+  }
+
+  .pvj-member-left {
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .pvjMember-main {
+    padding: 0 10px 0 5px;
+  }
+
+  .pvj-member-section {
+    padding: 0 2px;
+    min-height: 180px;
+  }
+  
+  .pvj-member-bg-image {
+    object-fit: cover;
+  }
+
+  .pvj-member-content {
+    padding: 18px 15px;
+    gap: 12px;
+  }
+
+  .pvj-gift-box {
+    width: 70px;
+    min-width: 60px;
+    max-width: 80px;
+  }
+
+  .pvj-member-text h2 {
+    font-size: 17px;
+  }
+
+  .pvj-elite {
+    font-size: 17px;
+  }
+
+  .pvj-member-text p {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0 9px;
+    margin-top: 3px;
+  }
+
+  .pvj-member-right {
+    padding: 16px 6px 10px 6px;
+    border-radius: 10px;
+  }
+
+  .pvj-member-input,
+  .pvj-member-submit {
+    font-size: 1rem;
+    padding: 9px 8px;
+    border-radius: 7px;
+    border: none;
+    height: 39px;
+    width: 195px;
+  }
+
+  .pvj-member-radio-group {
+    padding: 10px 15px;
+  }
+
+  .pvj-custom-radio {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+
+  .pvj-radio-input:checked+.pvj-custom-radio:after {
+    width: 8px;
+    height: 8px;
+    top: 3px;
+    left: 3px;
+  }
+
+  .pvj-radio-label {
+    font-size: 14px;
+  }
+
+  .membmaininp {
+    display: flex;
+
+    gap: 10px;
+  }
+
+  .pvj-member-form {
+    display: inline-block;
+  }
+
+  .membmaininp .pvj-member-submit {
+    font-size: 14px;
+    border: 1px solid var(--pvj-gold);
+  }
+}

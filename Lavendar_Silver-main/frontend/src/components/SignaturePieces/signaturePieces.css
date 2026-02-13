@@ -1,0 +1,820 @@
+/* ===== BASE CSS STYLES (DIRECT SELECTORS) ===== */
+
+.signature-section {
+  padding: 0px 0 30px 0;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+  border: none !important;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.flower-decoration {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  /* Prevent layout shift - reserve space */
+  display: block;
+  height: auto;
+  aspect-ratio: 1 / 1;
+}
+
+.flower-top-right {
+  top: -150px;
+  right: -145px;
+  width: 385px;
+  height: 385px;
+  z-index: -1;
+  opacity: 0.17;
+  /* Ensure image maintains aspect ratio */
+  object-fit: contain;
+}
+
+.flower-bottom-left {
+  bottom: -180px;
+  left: -110px;
+  width: 410px;
+  height: 410px;
+  opacity: 0.17;
+  /* Ensure image maintains aspect ratio */
+  object-fit: contain;
+}
+
+.signature-container {
+  width: 100%;
+  margin: 0;
+  padding: 0 10px 10px 10px;
+  overflow: visible;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.signature-carousel-wrapper {
+  margin: 0 auto 30px;
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 20px;
+}
+
+.signature-carousel {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 10px 0;
+  margin: 0;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
+.signature-carousel::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+
+.signature-slide {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  padding: 4px;
+  width: calc(25% - 15px);
+  min-width: calc(25% - 15px);
+  max-width: calc(25% - 15px);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.signature-header {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+  border: none !important;
+}
+
+.signature-header .logo-container {
+  color: var(--pvj-green);
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.signature-header-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.signature-header-line {
+  flex: 1;
+  height: 2px;
+  max-width: 90px;
+  opacity: 0.7;
+}
+
+.signature-header-line:first-child {
+  background: linear-gradient(to right, transparent, var(--pvj-green));
+}
+
+.signature-header-line:last-child {
+  background: linear-gradient(to left, transparent, var(--pvj-green));
+}
+
+.signature-header h2 {
+  color: var(--pvj-green);
+  font-size: 30px;
+  font-weight: 600;
+  font-family: var(--font-primary);
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.signature-header p {
+  color: #000;
+  font-size: 14px;
+  font-family: var(--font-body);
+  margin: 0;
+  font-weight: 700;
+  max-width: 500px;
+  line-height: 1.4;
+}
+
+.logo-container .diamond-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+.signature-card {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  height: 440px;
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.signature-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.signature-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 270px;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+  display: block;
+  background: #000;
+}
+
+.signature-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.signature-card:hover .signature-img {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.signature-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--green-primary);
+  color: var(--white);
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  z-index: 2;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.signature-heart-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  border: none;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  filter: drop-shadow(2px 4px 6px black);
+  transition: filter 0.2s, opacity 0.2s;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.signature-heart-btn img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Wishlist heart icon active state */
+.signature-heart-btn.active {
+  filter: grayscale(0%) !important;
+  opacity: 1;
+}
+
+.signature-heart-btn:hover {
+  opacity: 1;
+}
+
+.signature-cart-btn {
+  width: 100%;
+  margin: 0px 0px 0px;
+  padding: 8px 12px;
+  background: var(--green-primary);
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.2s ease;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 0.8rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.signature-cart-btn:hover {
+  transform: translateY(-1px);
+  background: var(--pvj-green);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.signature-card-body {
+  padding: 16px 16px 0;
+  text-align: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.signature-card-body h3 {
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.signature-description {
+  display: none;
+  font-weight: bold;
+}
+
+.signature-option-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 4px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.signature-option-details span {
+  display: block;
+}
+
+.signature-rating-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.signature-rating-row .star {
+  color: #ffd700;
+  font-size: 0.7rem !important;
+  margin-right: 1px !important;
+  vertical-align: middle;
+  animation: none !important;
+  transform: none !important;
+}
+
+.signature-rating-row .rating-count {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-left: 6px;
+}
+
+.signature-price-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.signature-price {
+  color: var(--pvj-green);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.signature-old-price {
+  color: var(--text-light);
+  text-decoration: line-through;
+  font-size: 0.8rem;
+}
+
+
+.signature-footer {
+  margin-top: 24px;
+  padding: 0 20px;
+}
+
+.signature-view-btn {
+  background: var(--white);
+  color: var(--pvj-green);
+  border: 1.5px solid var(--pvj-green);
+  border-radius: var(--border-radius);
+  padding: 8px 28px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.signature-view-btn:hover {
+  background: var(--pvj-green);
+  color: var(--white);
+}
+
+/* Coming Soon Styles */
+.signature-coming-soon-container {
+  text-align: center;
+  padding: 4rem 2rem;
+  width: 99%;
+  margin: 0 auto;
+}
+
+.signature-coming-soon-icon {
+  margin-bottom: 1.5rem;
+}
+
+.signature-coming-soon-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.signature-coming-soon-description {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Dot Button Styles */
+.signature-dot-button {
+  background: #d1d1d1;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  margin: 0 6px;
+  border: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+/* Image Link Styles */
+.signature-img-link {
+  display: block;
+  height: 100%;
+}
+
+/* Title Link Styles */
+.signature-title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.signature-title-text {
+  display: inline;
+  cursor: pointer;
+}
+
+/* Star and Rating Styles */
+.signature-star {
+  color: #FFD700;
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
+.signature-star:last-child {
+  margin-right: 0;
+}
+
+.signature-rating-count {
+  margin-left: 8px;
+}
+
+/* Cart Button Styles */
+.signature-cart-btn-mobile {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signature-cart-btn-desktop {
+  display: flex;
+}
+
+/* .signature-cart-btn-go-to-cart uses same styles as .signature-cart-btn */
+
+.signature-cart-icon {
+  color: #0e593c;
+  font-size: 24px;
+}
+
+.signature-cart-img-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Custom Dots Navigation */
+.signature-custom-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+  gap: 0;
+}
+
+.signature-custom-dots li {
+  margin: 0;
+}
+
+.signature-custom-dots .signature-dot-button {
+  border: none;
+  background: #d1d1d1;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  margin: 0 6px;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.signature-custom-dots li.active .signature-dot-button,
+.signature-custom-dots li .signature-dot-button:hover {
+  background: #16784f;
+}
+
+.signature-custom-dots li:nth-child(2) .signature-dot-button,
+.signature-custom-dots li:nth-child(4) .signature-dot-button {
+  background: #949494;
+}
+
+
+/* Tablet (768px - 991px) */
+@media (max-width: 900px) {
+
+  .signature-card {
+    min-height: 450px;
+    border-radius: 14px;
+  }
+
+  .signature-img-wrap {
+    height: 250px;
+  }
+
+  .signature-header h2 {
+    font-size: 26px;
+  }
+
+  .signature-header p {
+    font-size: 13px;
+  }
+
+  .signature-card-body h3 {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .signature-price {
+    font-size: 1.05rem;
+  }
+
+  .signature-cart-btn {
+    padding: 10px 16px;
+    font-size: 0.85rem;
+  }
+
+  .signature-carousel-wrapper {
+    padding: 0 15px;
+  }
+
+  .signature-slide {
+    width: calc(50% - 10px);
+    min-width: calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+}
+
+/* Mobile (575px and below) */
+@media (max-width: 600px) {
+  .signature-carousel-wrapper {
+    padding: 0 0;
+    margin-bottom: 4rem;
+  }
+
+  .signature-carousel {
+    margin: 0 auto;
+    padding: 0;
+    gap: 16px;
+  }
+
+  .signature-slide {
+    width: 100%;
+    min-width: 100%;
+    max-width: calc(100vw - 40px);
+    padding: 0;
+  }
+
+  .signature-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .signature-header-title-wrapper {
+    gap: 8px;
+  }
+
+  .signature-section {
+    padding: 20px 0 60px 0;
+  }
+
+  .signature-container {
+    padding: 0 15px;
+  }
+
+  .signature-title-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 8px;
+    gap: 10px;
+  }
+
+  .signature-card-body h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 600;
+    color: #222;
+    line-height: 1.3;
+    text-align: left;
+    display: block;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .signature-rating-row {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    flex-shrink: 0;
+    white-space: nowrap;
+    justify-content: flex-end;
+  }
+
+  .signature-description {
+    display: block;
+    font-size: 0.85rem;
+    color: #666;
+    margin: 4px 0 8px 0;
+    line-height: 1.4;
+    text-align: left;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .signature-option-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 4px;
+    font-size: 0.75rem;
+    color: #888;
+  }
+
+  .signature-option-details span {
+    display: block;
+  }
+
+  .signature-card-body {
+    padding: 16px 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .signature-card {
+    min-height: 420px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .signature-img-wrap {
+    height: 280px;
+    margin-bottom: 0;
+    padding: 0;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .signature-header {
+    margin-bottom: 30px;
+  }
+
+  .signature-header h2 {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  .signature-header p {
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 8px;
+  }
+
+  .signature-cart-btn-desktop {
+    display: none !important;
+  }
+
+  .signature-cart-btn-mobile {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    z-index: 4;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    padding: 5px;
+    opacity: 0.92;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  .signature-cart-btn-mobile:hover:not(:disabled) {
+    background: #f5f5f5;
+    transform: scale(1.08);
+    opacity: 1;
+  }
+
+  .signature-cart-btn-mobile:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .signature-cart-btn-mobile:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .signature-img {
+    height: 100%;
+    border-radius: 16px 16px 0 0;
+    object-fit: cover;
+  }
+
+  .signature-custom-dots {
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .signature-custom-dots .signature-dot-button {
+    width: 12px;
+    height: 12px;
+    margin: 0 8px;
+  }
+
+  .signature-rating-row .rating-count {
+    font-size: 0.75rem;
+  }
+
+  .signature-star {
+    font-size: 1rem !important;
+    margin-right: 2px !important;
+  }
+
+  .signature-price-row {
+    margin-bottom: 12px;
+  }
+
+  .signature-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .signature-old-price {
+    font-size: 0.9rem;
+  }
+
+  /* Mobile Coming Soon Styles */
+  .signature-coming-soon-container {
+    padding: 2rem 1rem;
+    margin: 0;
+  }
+
+  .signature-coming-soon-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .signature-coming-soon-description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+    line-height: 1.6;
+  }
+
+  /* Flower decorations for mobile */
+  .flower-top-right {
+    top: -100px;
+    right: -80px;
+    width: 200px;
+    opacity: 0.1;
+  }
+
+  .flower-bottom-left {
+    bottom: -120px;
+    left: -60px;
+    width: 220px;
+    opacity: 0.1;
+  }
+}

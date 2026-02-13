@@ -1,0 +1,502 @@
+.rate-update-sett-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.rate-update-sett-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+}
+
+.rate-update-sett-controls-section {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.rate-update-sett-metal-type-dropdown,
+.rate-update-sett-purity-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rate-update-sett-metal-type-dropdown label,
+.rate-update-sett-purity-dropdown label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.rate-update-sett-dropdown {
+  position: relative;
+}
+
+.rate-update-sett-dropdown select {
+  appearance: none;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px 32px 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  min-width: 120px;
+}
+
+.rate-update-sett-dropdown select:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.rate-update-sett-dropdown-icon {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+  pointer-events: none;
+}
+
+.rate-update-sett-status-info {
+  display: flex;
+  gap: 24px;
+  flex: 1;
+}
+
+.rate-update-sett-status-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rate-update-sett-status-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.rate-update-sett-status-icon.connected {
+  color: #10b981;
+}
+
+.rate-update-sett-status-icon.last-update {
+  color: #8b5cf6;
+}
+
+.rate-update-sett-status-icon.next-update {
+  color: #f59e0b;
+}
+
+.rate-update-sett-status-label {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.rate-update-sett-status-value {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.rate-update-sett-status-value.connected {
+  color: #10b981;
+}
+
+.rate-update-sett-status-value.last-update {
+  color: #8b5cf6;
+}
+
+.rate-update-sett-status-value.next-update {
+  color: #f59e0b;
+}
+
+.rate-update-sett-update-rate-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #059669;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.rate-update-sett-update-rate-btn:hover {
+  background: #047857;
+}
+
+.rate-update-sett-rates-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.rate-update-sett-rate-card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.rate-update-sett-rate-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  border-color: #d1d5db;
+}
+
+.rate-update-sett-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 200px;
+}
+
+.rate-update-sett-card-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.rate-update-sett-status-badge {
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.rate-update-sett-status-badge.live {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.rate-update-sett-status-badge.manual {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.rate-update-sett-rate-info {
+  display: flex;
+  gap: 24px;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.rate-update-sett-rate-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  min-width: 90px;
+}
+
+.rate-update-sett-rate-row span:first-child {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.rate-update-sett-rate-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.rate-update-sett-rate-change {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.rate-update-sett-rate-change.positive {
+  color: #16a34a;
+}
+
+.rate-update-sett-rate-change.negative {
+  color: #dc2626;
+}
+
+.rate-update-sett-trend-section {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.rate-update-sett-trend-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.rate-update-sett-trend-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 4px 0;
+}
+
+.rate-update-sett-trend-header p {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.rate-update-sett-search-container {
+  position: relative;
+  width: 300px;
+}
+
+.rate-update-sett-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+  width: 16px;
+  height: 16px;
+}
+
+.rate-update-sett-search-container input {
+  width: 100%;
+  padding: 10px 12px 10px 36px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.rate-update-sett-search-container input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.rate-update-sett-search-container input::placeholder {
+  color: #9ca3af;
+}
+
+.rate-update-sett-data-table {
+  overflow-x: auto;
+}
+
+.rate-update-sett-data-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.rate-update-sett-data-table th {
+  background: #f9fafb;
+  padding: 12px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.rate-update-sett-data-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 14px;
+  color: #374151;
+}
+
+.rate-update-sett-data-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.rate-update-sett-updated-by {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #6b7280;
+}
+
+.rate-update-sett-source-badge {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.rate-update-sett-source-badge.manual {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.rate-update-sett-source-badge.auto-sync {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.rate-update-sett-actions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.rate-update-sett-action-btn {
+  padding: 6px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.rate-update-sett-action-btn.view {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.rate-update-sett-action-btn.view:hover {
+  background: #e5e7eb;
+}
+
+.rate-update-sett-action-btn.edit {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.rate-update-sett-action-btn.edit:hover {
+  background: #fde68a;
+}
+
+.rate-update-sett-action-btn.delete {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.rate-update-sett-action-btn.delete:hover {
+  background: #fecaca;
+}
+
+.rate-update-sett-action-btn.save {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.rate-update-sett-action-btn.save:hover {
+  background: #bbf7d0;
+}
+
+.rate-update-sett-action-btn.save:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.rate-update-sett-action-btn.cancel {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.rate-update-sett-action-btn.cancel:hover {
+  background: #e5e7eb;
+}
+
+.rate-update-sett-action-btn.cancel:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.rate-update-sett-inline-input {
+  width: 100px;
+  padding: 4px 8px;
+  border: 2px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  text-align: center;
+}
+
+.rate-update-sett-inline-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.rate-update-sett-inline-input::placeholder {
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .rate-update-sett-container {
+    padding: 16px;
+  }
+
+  .rate-update-sett-controls-section {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .rate-update-sett-status-info {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .rate-update-sett-rate-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .rate-update-sett-rate-info {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .rate-update-sett-actions {
+    margin-left: 0;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .rate-update-sett-trend-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .rate-update-sett-search-container {
+    width: 100%;
+  }
+
+  .rate-update-sett-data-table {
+    font-size: 12px;
+  }
+}

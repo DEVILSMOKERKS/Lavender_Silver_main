@@ -1,0 +1,831 @@
+.adminSupportTicketContainer {
+  padding: 24px 0;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Header Styles */
+.adminSupportTicketHeader {
+  margin-bottom: 24px;
+}
+
+.adminSupportTicketTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 16px;
+  /* letter-spacing: -0.025em; */
+  font-family: var(--font-primary);
+}
+
+.adminSupportTicketControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.adminSupportTicketSearchContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.adminSupportTicketSearchBox {
+  position: relative;
+  flex: 1;
+  max-width: 400px;
+}
+
+.adminSupportTicketSearchIcon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748b;
+}
+
+.adminSupportTicketSearchInput {
+  width: 100%;
+  padding: 8px 12px 8px 36px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: white;
+  color: #334155;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.adminSupportTicketSearchInput:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.adminSupportTicketSelect {
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: white;
+  color: #334155;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.adminSupportTicketSelect:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.adminSupportTicketActions {
+  display: flex;
+  gap: 8px;
+}
+
+.adminSupportTicketExportBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: white;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.adminSupportTicketExportBtn:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+/* Stats Cards */
+.adminSupportTicketStats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 32px;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.adminSupportTicketStatCard {
+  flex: 1 1 0;
+  min-width: 220px;
+  max-width: 100%;
+  flex-shrink: 0;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  overflow-x: auto;
+}
+
+.adminSupportTicketStatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.adminSupportTicketStatInfo {
+  flex: 1;
+}
+
+.adminSupportTicketStatTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.adminSupportTicketStatValue {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+.adminSupportTicketStatIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adminSupportTicketStatIconblue {
+  background-color: #dbeafe;
+  color: #3b82f6;
+}
+
+.adminSupportTicketStatIcongreen {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.adminSupportTicketStatIconpurple {
+  background-color: #f3e8ff;
+  color: #9333ea;
+}
+
+.adminSupportTicketStatIconorange {
+  background-color: #fed7aa;
+  color: #ea580c;
+}
+
+.adminSupportTicketStatChange {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.adminSupportTicketStatChangeincrease {
+  color: #16a34a;
+}
+
+.adminSupportTicketStatChangedanger {
+  color: #ef4444;
+}
+
+.adminSupportTicketStatChangepurple {
+  color: #a78bfa;
+}
+
+.adminSupportTicketStatChangesuccess {
+  color: #059669;
+}
+
+.adminSupportTicketStatChangeinfo {
+  color: #2563eb;
+}
+
+/* Directory Styles */
+.adminSupportTicketDirectory {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.adminSupportTicketDirectoryHeader {
+  padding: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.adminSupportTicketDirectoryTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 4px;
+  font-family: var(--font-primary);
+}
+
+.adminSupportTicketDirectorySubtitle {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Table Styles */
+.adminSupportTicketTable {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.adminSupportTicketTableHeader {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  padding: 16px 20px;
+  background-color: #faf6e6;
+  border-bottom: 1px solid #e2e8f0;
+  font-weight: 600;
+  color: #444;
+  text-wrap: nowrap;
+}
+
+.adminSupportTicketTableHeaderCell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.adminSupportTicketTableBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.adminSupportTicketTableRow {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 12px;
+  padding: 0 20px;
+  border-bottom: 1px solid #f1f5f9;
+  background: #fff;
+  min-height: 56px;
+  align-items: center;
+}
+
+.adminSupportTicketTableRow:hover {
+  background: #fff;
+}
+
+.adminSupportTicketTableCell {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 6px 0;
+  border-bottom: none;
+}
+
+.adminSupportTicketTicketInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+}
+
+.adminSupportTicketTicketIcon {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 50%;
+  margin-right: 6px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adminSupportTicketTicketIconred {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.adminSupportTicketTicketIconyellow {
+  background: #fef9c3;
+  color: #eab308;
+}
+
+.adminSupportTicketTicketIcongray {
+  background: #f3f4f6;
+  color: #64748b;
+}
+
+.adminSupportTicketTicketIcongreen {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.adminSupportTicketTicketId {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.adminSupportTicketTicketSubject {
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 0;
+}
+
+.adminSupportTicketTicketTag {
+  display: inline-block;
+  background: #f3f4f6;
+  color: #64748b;
+  border-radius: 8px;
+  font-size: 11px;
+  padding: 1px 8px;
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+.adminSupportTicketCustomerInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.adminSupportTicketCustomerAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.adminSupportTicketCustomerName {
+  font-weight: 500;
+  font-size: 14px;
+  color: #222;
+}
+
+.adminSupportTicketCustomerEmail {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.adminSupportTicketCreated {
+  font-size: 13px;
+  color: #222;
+  line-height: 1.3;
+}
+
+.adminSupportTicketAssignedTo {
+  font-size: 14px;
+  color: #222;
+}
+
+.adminSupportTicketPriority {
+  display: inline-block;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 3px 16px;
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.adminSupportTicketPriorityhigh {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.adminSupportTicketPrioritymedium {
+  background: #fef9c3;
+  color: #eab308;
+}
+
+.adminSupportTicketPrioritylow {
+  background: #f3e8ff;
+  color: #a78bfa;
+}
+
+.adminSupportTicketStatusBadge {
+  display: inline-block;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 3px 16px;
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.adminSupportTicketStatusopen {
+  background: #f3f4f6;
+  color: #a3a3a3;
+}
+
+.adminSupportTicketStatusprogress {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.adminSupportTicketStatusclosed {
+  background: #fef9c3;
+  color: #a3a3a3;
+}
+
+.adminSupportTicketStatusresolved {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.adminSupportTicketTableActions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.adminSupportTicketActionBtn {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.adminSupportTicketActionBtnView {
+  color: #6b7280;
+}
+
+.adminSupportTicketActionBtnEdit {
+  color: #16a34a;
+}
+
+.adminSupportTicketActionBtnDelete {
+  color: #ef4444;
+}
+
+/* Modal Overlay */
+.adminSupportTicketModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal Window */
+.adminSupportTicketModal {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  padding: 2rem 2.5rem;
+  min-width: 320px;
+  max-width: 95vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: fadeInModal 0.2s;
+}
+
+@keyframes fadeInModal {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.adminSupportTicketModal h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+/* --- Modal Form Improvements --- */
+.adminSupportTicketModal label {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.adminSupportTicketModal input,
+.adminSupportTicketModal select,
+.adminSupportTicketModal textarea {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.7rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #fafbfc;
+  transition: border 0.2s;
+  resize: vertical;
+  min-height: 38px;
+}
+
+.adminSupportTicketModal textarea {
+  min-height: 70px;
+  font-family: inherit;
+}
+
+.adminSupportTicketModal input:focus,
+.adminSupportTicketModal select:focus,
+.adminSupportTicketModal textarea:focus {
+  border-color: #bfa16c;
+  outline: none;
+}
+
+.adminSupportTicketModalActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  justify-content: flex-end;
+}
+
+/* --- Modal Button Consistency --- */
+.adminSupportTicketModalActions button,
+.adminSupportTicketModalActions .adminSupportTicketModalDelete,
+.adminSupportTicketModalActions .adminSupportTicketModalClose,
+.adminSupportTicketModalActions .adminSupportTicketModalCancel {
+  min-width: 110px;
+  height: 42px;
+  padding: 0 1.5rem;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adminSupportTicketModalActions button:disabled,
+.adminSupportTicketModalActions .adminSupportTicketModalDelete:disabled,
+.adminSupportTicketModalActions .adminSupportTicketModalClose:disabled,
+.adminSupportTicketModalActions .adminSupportTicketModalCancel:disabled {
+  background: #ccc;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.adminSupportTicketModalActions button:not(.adminSupportTicketModalClose):not(.adminSupportTicketModalDelete):not(.adminSupportTicketModalCancel) {
+  background: #16a34a;
+  color: #fff;
+}
+
+.adminSupportTicketModalActions button:not(.adminSupportTicketModalClose):not(.adminSupportTicketModalDelete):not(.adminSupportTicketModalCancel):hover {
+  background: #15803d;
+}
+
+.adminSupportTicketModalActions .adminSupportTicketModalDelete {
+  background: #ef4444;
+  color: #fff;
+}
+
+.adminSupportTicketModalActions .adminSupportTicketModalDelete:hover {
+  background: #b91c1c;
+}
+
+.adminSupportTicketModalActions .adminSupportTicketModalClose,
+.adminSupportTicketModalActions .adminSupportTicketModalCancel {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.adminSupportTicketModalActions .adminSupportTicketModalClose:hover,
+.adminSupportTicketModalActions .adminSupportTicketModalCancel:hover {
+  background: #d1cfcf;
+}
+
+/* For single Cancel button outside .adminSupportTicketModalActions */
+.adminSupportTicketModal .adminSupportTicketModalClose {
+  background: #e0e0e0;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.adminSupportTicketModal .adminSupportTicketModalClose:hover {
+  background: #d1cfcf;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .adminSupportTicketModal {
+    padding: 1rem 0.5rem;
+    min-width: 90vw;
+  }
+}
+
+/* Filter dropdowns */
+.adminSupportTicketSelect {
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+  padding: 0.4rem 1.2rem 0.4rem 0.7rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background: #fafbfc;
+  font-size: 1rem;
+  color: #333;
+  transition: border 0.2s;
+}
+
+.adminSupportTicketSelect:focus {
+  border-color: #bfa16c;
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .adminSupportTicketControls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .adminSupportTicketSearchContainer {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .adminSupportTicketStats {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .adminSupportTicketTableHeader,
+  .adminSupportTicketTableRow {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .adminSupportTicketTableHeaderCell {
+    display: none;
+  }
+
+  .adminSupportTicketTableCell {
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+  }
+
+  .adminSupportTicketTableCell:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .adminSupportTicketContainer {
+    padding: 16px;
+  }
+
+  .adminSupportTicketStats {
+    gap: 12px;
+    width: 93vw;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .adminSupportTicketStatCard {
+    min-width: 170px;
+    padding: 14px;
+  }
+
+  .adminSupportTicketStatTitle {
+    font-size: 13px;
+  }
+
+  .adminSupportTicketStatValue {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .adminSupportTicketTicketIcon {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+    font-size: 13px;
+    margin-right: 4px;
+  }
+
+  .adminSupportTicketTicketId {
+    font-size: 12px;
+  }
+
+  .adminSupportTicketTicketSubject {
+    font-size: 11px;
+  }
+
+  .adminSupportTicketTicketTag {
+    font-size: 10px;
+    padding: 1px 6px;
+  }
+
+  .adminSupportTicketTableCell {
+    padding: 4px 0;
+  }
+}
+
+/* --- View Modal Enhancements --- */
+.adminSupportTicketViewModal {
+  max-width: 800px;
+  /* Wider modal for details */
+  padding: 1.5rem 2rem;
+}
+
+.adminSupportTicketViewGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1.5rem;
+}
+
+.adminSupportTicketViewSection h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.adminSupportTicketViewSection p {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.adminSupportTicketViewMessages {
+  margin-top: 1rem;
+}
+
+.adminSupportTicketViewMessages h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.adminSupportTicketViewMessage {
+  background: #f9f9f9;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border-left: 3px solid #ccc;
+}
+
+.adminSupportTicketViewMessage.adminSupportTicketViewMessageadmin {
+  border-left-color: #16a34a;
+}
+
+.adminSupportTicketViewMessage.adminSupportTicketViewMessageuser {
+  border-left-color: #3b82f6;
+}
+
+.adminSupportTicketViewMessageSender {
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 0.25rem;
+}
+
+.adminSupportTicketViewMessageTime {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 0.5rem;
+  text-align: right;
+}

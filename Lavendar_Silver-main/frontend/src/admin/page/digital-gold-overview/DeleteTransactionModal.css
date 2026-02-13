@@ -1,0 +1,239 @@
+.delete-transaction-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+}
+
+.delete-transaction-modal {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: delete-transaction-modal-slide-in 0.3s ease-out;
+}
+
+@keyframes delete-transaction-modal-slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.delete-transaction-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 24px 0 24px;
+    border-bottom: 1px solid var(--gray-200);
+    padding-bottom: 16px;
+}
+
+.delete-transaction-modal-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.delete-transaction-modal-title h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.delete-transaction-modal-icon {
+    color: var(--red-primary);
+    width: 24px;
+    height: 24px;
+}
+
+.delete-transaction-modal-close {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-transaction-modal-close:hover {
+    background-color: var(--cream-bg);
+    color: var(--text-dark);
+}
+
+.delete-transaction-modal-content {
+    padding: 24px;
+}
+
+.delete-transaction-modal-warning {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding: 16px;
+    background-color: var(--red-light);
+    border: 1px solid var(--red-primary);
+    border-radius: 8px;
+}
+
+.delete-transaction-modal-warning-icon {
+    color: var(--red-primary);
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.delete-transaction-modal-warning p {
+    margin: 0;
+    color: var(--red-primary);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.delete-transaction-modal-details {
+    background-color: var(--cream-bg);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.delete-transaction-modal-detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--pvj-gold);
+}
+
+.delete-transaction-modal-detail-row:last-child {
+    border-bottom: none;
+}
+
+.delete-transaction-modal-label {
+    font-weight: 500;
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+.delete-transaction-modal-value {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 14px;
+}
+
+.delete-transaction-modal-note {
+    background-color: var(--pvj-pearl);
+    border: 1px solid var(--pvj-gold);
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.delete-transaction-modal-note p {
+    margin: 0;
+    color: var(--text-dark);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.delete-transaction-modal-actions {
+    display: flex;
+    gap: 12px;
+    padding: 0 24px 24px 24px;
+    justify-content: flex-end;
+}
+
+.delete-transaction-modal-btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.delete-transaction-modal-cancel {
+    background-color: var(--cream-bg);
+    color: var(--text-dark);
+    border: 1px solid var(--pvj-gold);
+}
+
+.delete-transaction-modal-cancel:hover {
+    background-color: var(--pvj-gold);
+    color: var(--white);
+}
+
+.delete-transaction-modal-confirm {
+    background-color: var(--red-primary);
+    color: var(--white);
+    border: 1px solid var(--red-primary);
+}
+
+.delete-transaction-modal-confirm:hover {
+    background-color: var(--red-primary);
+    border-color: var(--red-primary);
+    opacity: 0.9;
+}
+
+.delete-transaction-modal-confirm:active {
+    transform: translateY(1px);
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    .delete-transaction-modal {
+        width: 95%;
+        margin: 20px;
+    }
+
+    .delete-transaction-modal-header {
+        padding: 20px 20px 0 20px;
+    }
+
+    .delete-transaction-modal-content {
+        padding: 20px;
+    }
+
+    .delete-transaction-modal-actions {
+        padding: 0 20px 20px 20px;
+        flex-direction: column;
+    }
+
+    .delete-transaction-modal-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .delete-transaction-modal-detail-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .delete-transaction-modal-value {
+        font-size: 13px;
+    }
+}

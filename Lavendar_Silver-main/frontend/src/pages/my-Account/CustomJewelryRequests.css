@@ -1,0 +1,733 @@
+/* Custom Jewelry Requests Page Styles */
+.custom-jewelry-requests-page {
+    min-height: 100vh;
+    background: var(--cream-bg);
+}
+
+.custom-requests-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    min-height: 80vh;
+}
+
+.requests-header {
+    margin-bottom: 1.5rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.requests-header h2 {
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.requests-header p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-family: var(--font-body);
+    margin: 0;
+}
+
+.refresh-btn {
+    background: var(--pvj-green);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.refresh-btn:hover {
+    background: var(--pvj-maroon);
+    transform: scale(1.05);
+}
+
+.refresh-btn i {
+    font-size: 1rem;
+}
+
+/* Loading State */
+.loading-container {
+    text-align: center;
+    padding: 2rem;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--green-light);
+    border-top: 4px solid var(--pvj-green);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 0.75rem;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-container p {
+    color: var(--text-light);
+    font-family: var(--font-body);
+}
+
+/* No Requests State */
+.no-requests {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.no-requests-icon {
+    font-size: 2.5rem;
+    color: var(--pvj-gold);
+    margin-bottom: 0.75rem;
+}
+
+.no-requests h3 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--pvj-green);
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.no-requests p {
+    font-family: var(--font-body);
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.custom-jewelry-create-btn {
+    background: var(--pvj-green);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font-secondary);
+    box-shadow: var(--card-shadow);
+    white-space: nowrap;
+}
+
+.custom-jewelry-create-btn:hover {
+    background: var(--pvj-maroon);
+    transform: translateY(-1px);
+    box-shadow: var(--card-shadow-hover);
+}
+
+.custom-jewelry-create-btn:active {
+    transform: translateY(0);
+}
+
+/* Requests Grid */
+.requests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.request-card {
+    background: var(--white);
+    border-radius: var(--featured-border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid var(--pvj-pearl);
+}
+
+.request-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--card-shadow-hover);
+}
+
+.request-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--green-light);
+}
+
+.request-header h3 {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
+}
+
+.status-badge {
+    padding: 0.4rem 0.75rem;
+    border-radius: var(--border-radius);
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-family: var(--font-secondary);
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-pending {
+    background: var(--yellow-light);
+    color: var(--yellow-dark);
+}
+
+.status-approved {
+    background: var(--green-light);
+    color: var(--pvj-green);
+}
+
+.status-progress {
+    background: var(--blue-light);
+    color: var(--blue-dark);
+}
+
+.status-completed {
+    background: var(--green-light);
+    color: var(--pvj-green);
+}
+
+.status-rejected {
+    background: var(--red-light);
+    color: var(--red-primary);
+}
+
+.request-details {
+    margin-bottom: 1rem;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--green-light);
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-family: var(--font-secondary);
+    white-space: nowrap;
+    font-size: 0.8rem;
+}
+
+.detail-value {
+    color: var(--text-light);
+    font-family: var(--font-body);
+    text-align: right;
+    word-break: break-word;
+    max-width: 120px;
+    font-size: 0.8rem;
+}
+
+.request-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-jewelry-view-btn {
+    background: var(--pvj-green);
+    color: var(--white);
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-family: var(--font-secondary);
+    font-size: 0.85rem;
+    box-shadow: var(--card-shadow);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.custom-jewelry-view-btn:hover {
+    background: var(--pvj-maroon);
+    transform: translateY(-1px);
+    box-shadow: var(--card-shadow-hover);
+}
+
+.custom-jewelry-view-btn:active {
+    transform: translateY(0);
+}
+
+.custom-jewelry-delete-btn {
+    background: var(--red-primary);
+    color: var(--white);
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-family: var(--font-secondary);
+    font-size: 0.85rem;
+    box-shadow: var(--card-shadow);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.custom-jewelry-delete-btn:hover {
+    background: #c82333;
+    transform: translateY(-1px);
+    box-shadow: var(--card-shadow-hover);
+}
+
+.custom-jewelry-delete-btn:active {
+    transform: translateY(0);
+}
+
+.custom-jewelry-delete-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 1.5rem;
+}
+
+.modal-content {
+    background: var(--white);
+    border-radius: var(--featured-border-radius);
+    max-width: 700px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: var(--card-shadow-hover);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.5rem 0.75rem;
+    border-bottom: 2px solid var(--green-light);
+}
+
+.modal-header h3 {
+    font-size: 1.4rem;
+    color: var(--text-dark);
+    font-family: var(--font-heading);
+    margin: 0;
+    font-weight: 600;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--text-light);
+    cursor: pointer;
+    padding: 0.4rem;
+    border-radius: 50%;
+    transition: all 0.3s;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close:hover {
+    background: var(--red-light);
+    color: var(--red-primary);
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.detail-section {
+    margin-bottom: 1.5rem;
+}
+
+.detail-section:last-child {
+    margin-bottom: 0;
+}
+
+.detail-section h4 {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    border-bottom: 2px solid var(--pvj-green);
+    padding-bottom: 0.25rem;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.75rem;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem;
+    background: var(--cream-bg);
+    border-radius: var(--border-radius);
+}
+
+.detail-item .label {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-family: var(--font-secondary);
+    white-space: nowrap;
+    font-size: 0.8rem;
+}
+
+.detail-item .value {
+    color: var(--text-light);
+    font-family: var(--font-body);
+    text-align: right;
+    word-break: break-word;
+    max-width: 150px;
+    font-size: 0.8rem;
+}
+
+.detail-item .value.status {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.description {
+    background: var(--cream-bg);
+    padding: 0.75rem;
+    border-radius: var(--border-radius);
+    line-height: 1.5;
+    color: var(--text-dark);
+    font-family: var(--font-body);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 0.8rem;
+}
+
+.estimated-price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--pvj-green);
+    font-family: var(--font-secondary);
+}
+
+.delivery-date {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    font-family: var(--font-body);
+}
+
+.reference-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.reference-image {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    position: relative;
+}
+
+.reference-image img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.reference-image:hover img {
+    transform: scale(1.05);
+}
+
+.reference-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.reference-image:hover::before {
+    opacity: 1;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.empty-state h3 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--pvj-green);
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.empty-state p {
+    font-family: var(--font-body);
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* Add More Custom Section */
+.add-more-custom-section {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--green-light);
+}
+
+.custom-jewelry-add-more-btn {
+    background: var(--pvj-green);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font-secondary);
+    box-shadow: var(--card-shadow);
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.custom-jewelry-add-more-btn:hover {
+    background: var(--pvj-maroon);
+    transform: translateY(-1px);
+    box-shadow: var(--card-shadow-hover);
+}
+
+.custom-jewelry-add-more-btn i {
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .custom-requests-container {
+        padding: 1rem;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .requests-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .requests-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .request-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .detail-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+    }
+
+    .detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
+    }
+
+    .modal-content {
+        margin: 0.5rem;
+        max-height: 95vh;
+    }
+
+    .modal-header,
+    .modal-body {
+        padding: 1rem;
+    }
+
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .add-more-custom-section {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    .custom-jewelry-add-more-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    .request-actions {
+        flex-direction: column;
+    }
+
+    .custom-jewelry-view-btn,
+    .custom-jewelry-delete-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Delete Modal Styles */
+.delete-modal {
+    max-width: 500px;
+}
+
+.delete-request-info {
+    background: var(--cream-bg);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin: 1rem 0;
+}
+
+.delete-request-info p {
+    margin: 0.5rem 0;
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    font-size: 0.9rem;
+}
+
+.delete-request-info strong {
+    color: var(--text-dark);
+    font-family: var(--font-secondary);
+}
+
+.delete-warning {
+    color: var(--red-primary);
+    font-weight: 600;
+    font-family: var(--font-secondary);
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    border-top: 2px solid var(--green-light);
+}
+
+.cancel-btn {
+    background: var(--white);
+    color: var(--text-dark);
+    padding: 0.6rem 1.2rem;
+    border: 2px solid var(--text-light);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-family: var(--font-secondary);
+    font-size: 0.85rem;
+}
+
+.cancel-btn:hover {
+    background: var(--green-light);
+    border-color: var(--pvj-green);
+}
+
+.cancel-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.delete-confirm-btn {
+    background: var(--red-primary);
+    color: var(--white);
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-family: var(--font-secondary);
+    font-size: 0.85rem;
+}
+
+.delete-confirm-btn:hover {
+    background: #c82333;
+    transform: translateY(-1px);
+}
+
+.delete-confirm-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}

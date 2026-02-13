@@ -1,0 +1,960 @@
+.admin-email-auto {
+  width: 100%;
+  padding: 12px 9px;
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.admin-email-auto__header {
+  margin-bottom: 2rem;
+}
+
+.admin-email-auto__title {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;       
+  font-style: normal;      
+  font-size: 18px;
+  line-height: 100%;       
+  letter-spacing: 0.54px;
+  color: #000000; 
+}
+
+.admin-email-auto__stats-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 24px;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.admin-email-auto__stat-card {
+  height: 89px;
+  width: 100%;
+  min-width: 219px;
+  box-shadow: 0 0 3px #00000042;
+  border-radius: 11px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.admin-email-auto__stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.admin-email-auto__stat-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.admin-email-card-img{
+  height: 25px;
+  width: 25px;
+}
+
+.admin-email-auto__campaigns-icon {
+  background-color: #dbeafe;
+  color: #3b82f6;
+}
+
+.admin-email-auto__subscribers-icon {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.admin-email-auto__open-rate-icon {
+  background-color: #f3e8ff;
+  color: #8b5cf6;
+}
+
+.admin-email-auto__ctr-icon {
+  background-color: #fce7f3;
+  color: red;
+}
+
+.admin-email-auto__stat-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.admin-email-auto__stat-label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;        
+  font-style: normal;      
+  font-size: 12px;
+  line-height: 100%;      
+  letter-spacing: 0.36px; 
+}
+
+.admin-email-auto__stat-value {
+  font-family: 'Crimson Pro', serif;
+  font-weight: 600;        
+  font-style: normal;      
+  font-size: 20px;
+  line-height: 100%;      
+  letter-spacing: 0.6px;
+}
+
+.admin-email-auto__controls {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+
+
+  border-radius: 6px;
+  padding: 9px 20px;
+  border: 1px solid #0000001A;
+  /* box-shadow: 0 0 3px #0000001A; */
+}
+
+.admin-email-auto__filter-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.admin-email-auto__filter-label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600; 
+  font-style: normal;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #00000099;
+}
+
+.admin-email-auto__filter-dropdown {
+  position: relative;
+}
+
+.admin-email-auto__dropdown {
+  border: 1px solid #00000024;
+  border-radius: 4px;
+  padding: 9px 5px;
+  appearance: none;
+ font-family: 'Open Sans', sans-serif;
+  font-weight: 400; 
+  font-style: normal;
+  font-size: 10px;
+ 
+  letter-spacing: 3%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  min-width: 75px;
+}
+
+.admin-email-auto__dropdown-icon {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748b;
+  pointer-events: none;
+}
+
+.admin-email-auto__new-campaign-btn {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 5px 7px;
+  background-color: #0E593C;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  white-space: nowrap;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 100%;
+  letter-spacing: 3%;
+}
+
+.admin-email-auto__new-campaign-btn:hover {
+  background-color: #059669;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3);
+}
+
+.admin-email-auto__new-campaign-btn:active {
+  transform: translateY(0);
+}
+
+/* Header Actions */
+.admin-email-auto__header-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.admin-email-auto__btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  border: none;
+}
+
+.admin-email-auto__btn-primary {
+  background-color: #0E593C;
+  color: white;
+}
+
+.admin-email-auto__btn-primary:hover {
+  background-color: #059669;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3);
+}
+
+.admin-email-auto__btn-secondary {
+  background-color: #f1f5f9;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+.admin-email-auto__btn-secondary:hover {
+  background-color: #e5e7eb;
+  transform: translateY(-1px);
+}
+
+/* Loading State */
+.admin-email-auto__loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  gap: 1rem;
+}
+
+/* Template Preview and Edit Styles */
+.admin-email-auto__template-preview {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.admin-email-auto__template-tabs {
+  display: flex;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-email-auto__tab-btn {
+  flex: 1;
+  padding: 12px 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+.admin-email-auto__tab-btn:hover {
+  background-color: #e9ecef;
+  color: #333;
+}
+
+.admin-email-auto__tab-btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.admin-email-auto__template-preview-content {
+  padding: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+
+.admin-email-auto__template-edit {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-top: 1px solid #ddd;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.4;
+  resize: vertical;
+  min-height: 300px;
+  background-color: #f8f9fa;
+}
+
+.admin-email-auto__template-edit:focus {
+  outline: none;
+  background-color: white;
+}
+
+.admin-email-auto__spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f4f6;
+  border-top: 4px solid #0E593C;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Modal Styles */
+.admin-email-auto__modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.admin-email-auto__modal {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.admin-email-auto__modal-large {
+  max-width: 800px;
+}
+
+.admin-email-auto__modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.admin-email-auto__modal-header h3 {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #111827;
+  margin: 0;
+}
+
+.admin-email-auto__modal-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.admin-email-auto__modal-close:hover {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.admin-email-auto__modal-form {
+  padding: 1.5rem;
+}
+
+.admin-email-auto__form-group {
+  margin-bottom: 1.5rem;
+}
+
+.admin-email-auto__form-group label {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.admin-email-auto__form-group input,
+.admin-email-auto__form-group select,
+.admin-email-auto__form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.admin-email-auto__form-group input:focus,
+.admin-email-auto__form-group select:focus,
+.admin-email-auto__form-group textarea:focus {
+  outline: none;
+  border-color: #0E593C;
+  box-shadow: 0 0 0 3px rgba(14, 89, 60, 0.1);
+}
+
+.admin-email-auto__form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.admin-email-auto__modal-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.admin-email-auto__modal-actions button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid #d1d5db;
+}
+
+.admin-email-auto__modal-actions button[type="button"] {
+  background-color: white;
+  color: #374151;
+}
+
+.admin-email-auto__modal-actions button[type="button"]:hover {
+  background-color: #f9fafb;
+}
+
+.admin-email-auto__modal-actions button[type="submit"] {
+  background-color: #0E593C;
+  color: white;
+  border-color: #0E593C;
+}
+
+.admin-email-auto__modal-actions button[type="submit"]:hover {
+  background-color: #059669;
+  transform: translateY(-1px);
+}
+
+.admin-email-auto__modal-actions button[type="submit"]:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.admin-email-auto__modal-actions button[type="submit"]:disabled:hover {
+  background-color: #9ca3af;
+  transform: none;
+}
+
+/* Additional Type Badges */
+.admin-email-auto__type-welcome {
+  background-color: #ecfdf5;
+  color: #059669;
+}
+
+.admin-email-auto__type-order {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.admin-email-auto__type-product {
+  background-color: #e0e7ff;
+  color: #7c3aed;
+}
+
+/* Additional Status Badges */
+.admin-email-auto__status-draft {
+  background-color: #f3f4f6;
+  color: #6b7280;
+}
+
+/* Action Button Styles */
+.admin-email-auto__edit-btn {
+  color: #3b82f6;
+}
+
+.admin-email-auto__edit-btn:hover {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.admin-email-auto__delete-btn {
+  color: #ef4444;
+}
+
+.admin-email-auto__delete-btn:hover {
+  background-color: #dc2626;
+  color: white;
+}
+
+.admin-email-auto__trigger-btn {
+  background-color: #059669;
+  color: white;
+  border: 1px solid #059669;
+}
+
+.admin-email-auto__trigger-btn:hover {
+  background-color: #047857;
+  color: white;
+}
+
+.admin-email-auto__table-container {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.admin-email-auto__campaign-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-email-auto__campaign-table th {
+  background-color: #f1f5f9;
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  font-family: 'Crimson Pro', serif;
+  font-weight: 400; 
+  font-style: normal;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+}
+
+.admin-email-auto__header-cell {
+  display: flex;
+  align-items: center;
+  /* gap: 0.5rem; */
+} 
+
+.admin-email-auto__header-cell svg{
+  height: 11px;
+  width: 11px;
+}
+
+.admin-email-auto__campaign-table td {
+  padding: 13px 14px;
+  border-bottom: 1px solid #00000033;
+  vertical-align: middle;
+}
+
+.admin-email-auto__campaign-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.admin-email-auto__campaign-name {
+   font-family: 'Crimson Pro', serif;
+  font-weight: 400;
+  font-style: normal; 
+  font-size: 13px;
+  line-height: 10px;
+  letter-spacing: 3%;
+  color: #000000;
+}
+
+.admin-email-auto__type-badge {
+ font-family: 'Crimson Pro', serif;
+  font-weight: 400;
+  font-style: normal; 
+  font-size: 12px;
+  line-height: 10px;
+  letter-spacing: 3%;
+  border-radius: 16px;
+  padding: 6px 8px;
+}
+
+.admin-email-auto__type-transactional {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.admin-email-auto__type-promotional {
+  background-color: #f3e8ff;
+  color: #7c3aed;
+}
+
+.admin-email-auto__type-abandoned {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.admin-email-auto__audience,.admin-email-auto__sent, .admin-email-auto__open-rate {
+  font-family: 'Crimson Pro', serif;
+  font-weight: 400;
+  font-style: normal; 
+  font-size: 12px;
+  line-height: 100%; 
+  letter-spacing: 0.36px;
+  color: #000000;
+}
+
+/* .admin-email-auto__sent {
+   font-family: 'Crimson Pro', serif;
+  font-weight: 400;
+  font-style: normal; 
+  font-size: 12px;
+  line-height: 100%; 
+  letter-spacing: 0.36px;
+  color: #000000;
+} */
+
+/* .admin-email-auto__open-rate {
+ font-family: 'Crimson Pro', serif;
+  font-weight: 400;
+  font-style: normal; 
+  font-size: 12px;
+  line-height: 100%; 
+  letter-spacing: 0.36px;
+  color: #000000;
+} */
+
+.admin-email-auto__ctr {
+  font-family: 'Crimson Pro', serif;
+  font-weight: 500;
+  font-style: normal; 
+  font-size: 13px;
+  line-height: 100%; 
+  letter-spacing: 0.36px;
+  color: #000000;
+}
+
+.admin-email-auto__status {
+ font-family: 'Crimson Pro', serif;
+  font-weight: 500;
+  font-style: normal; 
+  font-size: 13px;
+  line-height: 100%; 
+  letter-spacing: 0.36px;
+  color: #000000;
+  padding: 5px 10px;
+  border-radius: 16px;
+}
+
+.admin-email-auto__status-active {
+  background-color: #D9FFEE;
+  color: #0E593C;
+}
+
+.admin-email-auto__status-paused {
+  background-color: #FFF7C2;
+  color: #BA8B23;
+}
+
+.admin-email-auto__actions {
+  display: flex;
+  /* gap: 0.5rem; */
+}
+
+.admin-email-auto__action-btn {
+  padding: 0.5rem;
+  border: 1px solid #0000001A;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: transparent;
+  outline: none;
+  color: #000000c4;
+}
+
+.admin-email-auto__action-btn:hover {
+  background-color: #f1f5f9;
+  transform: translateY(-1px);
+    color: #059669;
+}
+
+/* Manual Email Styles */
+.admin-email-auto__form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.admin-email-auto__form-row .admin-email-auto__form-group {
+  flex: 1;
+}
+
+.admin-email-auto__user-selection {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.admin-email-auto__user-selection-header {
+  padding: 12px 16px;
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  border-radius: 8px 8px 0 0;
+}
+
+.admin-email-auto__user-selection-header label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0;
+}
+
+.admin-email-auto__user-selection-header input[type="checkbox"] {
+  margin: 0;
+}
+
+.admin-email-auto__user-list {
+  padding: 8px;
+}
+
+.admin-email-auto__user-item {
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  transition: background-color 0.2s;
+}
+
+.admin-email-auto__user-item:hover {
+  background-color: #f3f4f6;
+}
+
+.admin-email-auto__user-item label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #374151;
+  margin: 0;
+  cursor: pointer;
+}
+
+.admin-email-auto__user-item input[type="checkbox"] {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.admin-email-auto__user-name {
+  font-weight: 600;
+  color: #111827;
+  min-width: 120px;
+}
+
+.admin-email-auto__user-email {
+  color: #6b7280;
+  flex: 1;
+}
+
+.admin-email-auto__user-orders {
+  color: #059669;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.admin-email-auto__cart-info {
+  color: #dc2626;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.admin-email-auto__loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .admin-email-auto__title {
+    font-size: 1.5rem;
+  }
+  .admin-email-auto__stat-card {
+    width: 100%;
+    padding: 1rem;
+  }
+  .admin-email-auto__controls {
+    gap: 0.75rem;
+  }
+  .admin-email-auto__filter-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .admin-email-auto__dropdown {
+    width: 100%;
+  }
+  .admin-email-auto__new-campaign-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .admin-email-auto__campaign-table th,
+  .admin-email-auto__campaign-table td {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-email-auto {
+    padding: 0.5rem;
+  }
+  .admin-email-auto__stat-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+  .admin-email-auto__actions {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .admin-email-auto__action-btn {
+    padding: 0.375rem;
+  }
+}
+
+/* Notification Styles */
+.admin-email-auto__notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  max-width: 400px;
+  min-width: 300px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-left: 4px solid;
+  animation: slideInRight 0.3s ease-out;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.admin-email-auto__notification--success {
+  border-left-color: #10b981;
+}
+
+.admin-email-auto__notification--error {
+  border-left-color: #ef4444;
+}
+
+.admin-email-auto__notification-content {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  gap: 12px;
+}
+
+.admin-email-auto__notification-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.admin-email-auto__notification--success .admin-email-auto__notification-icon {
+  color: #10b981;
+}
+
+.admin-email-auto__notification--error .admin-email-auto__notification-icon {
+  color: #ef4444;
+}
+
+.admin-email-auto__notification-message {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  line-height: 1.4;
+}
+
+.admin-email-auto__notification-close {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.admin-email-auto__notification-close:hover {
+  background-color: #f3f4f6;
+  color: #6b7280;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive notification */
+@media (max-width: 768px) {
+  .admin-email-auto__notification {
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    max-width: none;
+    min-width: auto;
+  }
+}

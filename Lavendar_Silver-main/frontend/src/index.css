@@ -1,0 +1,108 @@
+/* ================================
+   Google Fonts are now loaded via HTML <link> tags for better performance
+   ================================ */
+
+@import "tailwindcss";
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  background-color: #ffffff;
+  color: #333;
+  padding-top: 140px; /* Account for fixed header height */
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 100px; /* Smaller header on mobile */
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-secondary);
+}
+
+/* Prevent layout shift from unsized images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure images with width/height maintain aspect ratio */
+img[width][height] {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+:root {
+  --lavender-primary: #9370DB;
+  --lavender-dark: #7B68EE;
+  --lavender-light: #E6E6FA;
+  --lavender-lighter: #F5F0FF;
+  --lavender-complement: #FFE5B4;
+  --lavender-accent: #DDA0DD;
+  --pvj-green: #9370DB;
+  --pvj-maroon: #7b2b3e;
+  --pvj-gold: #c5a97e;
+  --pvj-pearl: #f5f2e1;
+  --font-primary: "Cinzel", serif;
+  --font-secondary: "Crimson Pro", serif;
+  --font-body: "Open Sans", sans-serif;
+  --font-heading: "Cinzel Decorative", serif;
+  --green-light: #E6E6FA;
+  --red-primary: #8b0000;
+  --red-light: #fff5f5;
+  --gold-primary: #d4b28c;
+  --maroon-primary: #6a1a3e;
+  --text-dark: #4A4A4A;
+  --text-light: #666666;
+  --white: #ffffff;
+  --black: #9370DB;
+  --border-radius: 4px;
+  --green-primary: #9370DB;
+  --font-script-clicker: 'Clicker Script', cursive;
+  --pvj-featured-bg: linear-gradient(90deg, #E6E6FA 0%, #9370DB 100%);
+  --pvj-luxury-bg: linear-gradient(90deg, #E6E6FA 0%, #9370DB 100%);
+  --category-catlog-bg: linear-gradient(90deg, #9370DB 0%, #FFFFFF 100%);
+  --pvj-pearl: #F5F0FF;
+  --pvj-gold: #c5a97e;
+  --featured-shadow: 0 2px 8px rgba(147, 112, 219, 0.15);
+  --featured-shadow-hover: 0 4px 12px rgba(147, 112, 219, 0.25);
+  --featured-border-radius: 4px;
+  --cream-bg: #F5F0FF;
+  --card-shadow: 0 2px 8px rgba(147, 112, 219, 0.1);
+  --card-shadow-hover: 0 4px 12px rgba(147, 112, 219, 0.2);
+  --open-sans: 'Open Sans';
+  --danger: #dc2626;
+  --danger-dark: #b91c1c;
+  --border-color: #E6E6FA;
+  --pvj-gold-light: #ede3cf;
+  --pvj-gold-dark: #a8905a;
+}
+
+p {
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: var(--font-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Stronger global override for MUI dialog backdrop in admin */
+.MuiBackdrop-root {
+  z-index: 100;
+  backdrop-filter: blur(6px) brightness(0.7);
+  background-color: rgba(30, 30, 30, 0.637) !important;
+  transition: all 0.3s;
+}

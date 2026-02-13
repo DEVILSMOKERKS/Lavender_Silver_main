@@ -1,0 +1,446 @@
+/* Terms & Conditions Management Styles */
+.terms-conditions-management {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.terms-conditions-management-page-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.terms-conditions-management-page-header h1 {
+  color: var(--text-dark);
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family: var(--font-primary);
+}
+
+.terms-conditions-management-page-header p {
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+/* Loading State */
+.terms-conditions-management-loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+/* Tabs */
+.terms-conditions-management-policy-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--pvj-pearl);
+  padding-bottom: 10px;
+}
+
+.terms-conditions-management-tab-button {
+  background: var(--pvj-pearl);
+  border: none;
+  padding: 12px 20px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-light);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.terms-conditions-management-tab-button:hover {
+  background: var(--green-light);
+  color: var(--text-dark);
+}
+
+.terms-conditions-management-tab-button.active {
+  background: var(--green-primary);
+  color: var(--white);
+}
+
+.terms-conditions-management-tab-icon {
+  font-size: 1.1rem;
+}
+
+/* Tab Content */
+.terms-conditions-management-tab-content {
+  background: white;
+  border-radius: var(--border-radius);
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.terms-conditions-management-tab-content h2 {
+  color: var(--text-dark);
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  font-family: var(--font-primary);
+}
+
+/* Form Sections */
+.terms-conditions-management-add-policy-section {
+  margin-bottom: 30px;
+}
+
+.terms-conditions-management-add-policy-section h3 {
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-family: var(--font-primary);
+}
+
+/* Form Groups */
+.terms-conditions-management-form-group {
+  margin-bottom: 20px;
+}
+
+.terms-conditions-management-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.terms-conditions-management-form-group input,
+.terms-conditions-management-form-group textarea,
+.terms-conditions-management-form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.terms-conditions-management-form-group input:focus,
+.terms-conditions-management-form-group textarea:focus,
+.terms-conditions-management-form-group select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.terms-conditions-management-form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Policy Entry Cards */
+.terms-conditions-management-policy-entry-card {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.terms-conditions-management-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f8f9fa;
+}
+
+.terms-conditions-management-entry-header h4 {
+  margin: 0;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.terms-conditions-management-remove-entry-btn {
+  background: var(--red-primary);
+  color: var(--white);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.terms-conditions-management-remove-entry-btn:hover {
+  background: var(--maroon-primary);
+}
+
+/* Subsections Container */
+.terms-conditions-management-subsections-container {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 2px solid #f8f9fa;
+}
+
+.terms-conditions-management-subsections-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.terms-conditions-management-subsections-header h5 {
+  margin: 0;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.terms-conditions-management-add-subsection-btn {
+  background: var(--pvj-gold);
+  color: var(--white);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.terms-conditions-management-add-subsection-btn:hover:not(:disabled) {
+  background: var(--gold-primary);
+}
+
+/* Subsection Cards */
+.terms-conditions-management-subsection-card {
+  background: var(--pvj-pearl);
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+.terms-conditions-management-subsection-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.terms-conditions-management-subsection-header h6 {
+  margin: 0;
+  color: #495057;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.terms-conditions-management-remove-subsection-btn {
+  background: var(--red-primary);
+  color: var(--white);
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.terms-conditions-management-remove-subsection-btn:hover {
+  background: var(--maroon-primary);
+}
+
+/* Form Actions */
+.terms-conditions-management-form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #f8f9fa;
+}
+
+.terms-conditions-management-add-more-btn {
+  background: var(--green-primary);
+  color: var(--white);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.terms-conditions-management-add-more-btn:hover {
+  background: var(--pvj-green);
+}
+
+.terms-conditions-management-submit-btn {
+  background: var(--green-primary);
+  color: var(--white);
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.terms-conditions-management-submit-btn:hover {
+  background: var(--pvj-green);
+}
+
+.terms-conditions-management-submit-btn:disabled {
+  background: var(--text-light);
+  cursor: not-allowed;
+}
+
+/* Update Note */
+.terms-conditions-management-update-note {
+  background: var(--green-light);
+  border: 1px solid var(--green-primary);
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.terms-conditions-management-update-note p {
+  margin: 0;
+  color: var(--green-primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Existing Policy Display */
+.terms-conditions-management-existing-policy {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid #f8f9fa;
+}
+
+.terms-conditions-management-existing-policy h3 {
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.terms-conditions-management-policy-item {
+  background: var(--pvj-pearl);
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.terms-conditions-management-policy-item h4 {
+  color: var(--text-dark);
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.terms-conditions-management-policy-item p {
+  color: var(--text-light);
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.terms-conditions-management-policy-item small {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+/* Subsections Display */
+.terms-conditions-management-subsections-display {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #dee2e6;
+}
+
+.terms-conditions-management-subsections-display h5 {
+  color: #495057;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.terms-conditions-management-subsection-display {
+  background: var(--pvj-pearl);
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.terms-conditions-management-subsection-display h6 {
+  color: #495057;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.terms-conditions-management-subsection-display p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .terms-conditions-management {
+    padding: 15px;
+  }
+
+  .terms-conditions-management-policy-tabs {
+    flex-direction: column;
+  }
+
+  .terms-conditions-management-tab-button {
+    margin: 2px 0;
+    border-radius: 6px;
+  }
+
+  .terms-conditions-management-tab-content {
+    padding: 20px;
+  }
+
+  .terms-conditions-management-add-policy-section {
+    padding: 20px;
+  }
+
+  .terms-conditions-management-form-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .terms-conditions-management-add-more-btn,
+  .terms-conditions-management-submit-btn {
+    width: 100%;
+  }
+
+  .terms-conditions-management-entry-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .terms-conditions-management-remove-entry-btn {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .terms-conditions-management-page-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .terms-conditions-management-tab-content {
+    padding: 15px;
+  }
+
+  .terms-conditions-management-policy-entry-card {
+    padding: 15px;
+  }
+}

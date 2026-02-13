@@ -1,0 +1,18 @@
+.product-loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    gap: 1.5rem;
+}
+
+.loader-text {
+    font-family: var(--font-primary, 'Playfair Display', serif);
+    color: var(--primary-color, #B38B59);
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}

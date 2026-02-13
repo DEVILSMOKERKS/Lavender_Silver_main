@@ -1,0 +1,470 @@
+.about-us-management {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-us-management-about-us-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-us-management-about-us-header h1 {
+  color: var(--text-dark);
+  margin-bottom: 10px;
+  font-family: var(--font-primary);
+}
+
+.about-us-management-about-us-header p {
+  color: var(--text-light);
+  font-size: 16px;
+  font-family: var(--font-secondary);
+}
+
+.about-us-management-about-us-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.about-us-management-tab-button {
+  padding: 12px 24px;
+  border: 2px solid var(--border-color);
+  background: var(--white);
+  color: var(--text-dark);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-family: var(--font-secondary);
+}
+
+.about-us-management-tab-button:hover {
+  border-color: var(--pvj-green);
+  color: var(--pvj-green);
+}
+
+.about-us-management-tab-button.active {
+  background: var(--pvj-green);
+  color: var(--white);
+  border-color: var(--pvj-green);
+}
+
+.about-us-management-about-us-content {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: var(--card-shadow);
+}
+
+.about-us-management-loading {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-light);
+  font-size: 18px;
+  font-family: var(--font-secondary);
+}
+
+.about-us-management-tab-content h2 {
+  color: var(--text-dark);
+  margin-bottom: 25px;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 10px;
+  font-family: var(--font-primary);
+}
+
+.about-us-management-form-group {
+  margin-bottom: 20px;
+}
+
+.about-us-management-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text-dark);
+  font-family: var(--font-secondary);
+}
+
+.about-us-management-form-group input[type="text"],
+.about-us-management-form-group input[type="number"],
+.about-us-management-form-group select,
+.about-us-management-form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+  font-family: var(--font-secondary);
+}
+
+.about-us-management-form-group input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border: 2px dashed var(--border-color);
+  border-radius: var(--border-radius);
+  background: var(--pvj-pearl);
+  cursor: pointer;
+}
+
+.about-us-management-form-group input[type="file"]:hover {
+  border-color: var(--pvj-green);
+  background: var(--green-light);
+}
+
+.about-us-management-form-group input:focus,
+.about-us-management-form-group select:focus,
+.about-us-management-form-group textarea:focus {
+  outline: none;
+  border-color: var(--pvj-green);
+}
+
+.about-us-management-form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.about-us-management-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.about-us-management-form-group input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.about-us-management-current-image {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: var(--pvj-pearl);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 12px;
+  color: var(--text-light);
+  font-family: var(--font-secondary);
+}
+
+.about-us-management-current-image p {
+  margin: 0;
+  word-break: break-all;
+}
+
+.about-us-management-no-data-message {
+  background: var(--pvj-gold-light);
+  border: 1px solid var(--pvj-gold);
+  border-radius: var(--border-radius);
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-us-management-no-data-message p {
+  margin: 0;
+  color: var(--pvj-gold-dark);
+  font-weight: 500;
+  font-family: var(--font-secondary);
+}
+
+.about-us-management-update-note {
+  background: var(--green-light);
+  border: 1px solid var(--pvj-green);
+  border-radius: var(--border-radius);
+  padding: 12px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.about-us-management-update-note p {
+  margin: 0;
+  color: var(--pvj-green);
+  font-weight: 500;
+  font-size: 14px;
+  font-family: var(--font-secondary);
+}
+
+.about-us-management button[type="submit"] {
+  background: var(--pvj-green);
+  color: var(--white);
+  padding: 12px 30px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+  font-family: var(--font-secondary);
+}
+
+.about-us-management button[type="submit"]:hover {
+  background: var(--green-primary);
+}
+
+.about-us-management button[type="submit"]:disabled {
+  background: var(--text-light);
+  cursor: not-allowed;
+}
+
+.about-us-management-add-new-section {
+  background: var(--pvj-pearl);
+  padding: 25px;
+  border-radius: var(--border-radius);
+  margin-bottom: 30px;
+  border: 1px solid var(--border-color);
+}
+
+.about-us-management-add-new-section h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+  font-family: var(--font-primary);
+}
+
+.about-us-management-existing-items h3 {
+  margin-bottom: 20px;
+  color: var(--text-dark);
+  font-family: var(--font-primary);
+}
+
+.about-us-management-item-card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: var(--card-shadow);
+}
+
+.about-us-management-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.about-us-management-item-header h4 {
+  margin: 0;
+  color: var(--text-dark);
+  font-family: var(--font-primary);
+}
+
+.about-us-management-type-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: var(--font-secondary);
+}
+
+.about-us-management-type-badge.mission {
+  background: var(--green-light);
+  color: var(--pvj-green);
+}
+
+.about-us-management-type-badge.vision {
+  background: var(--pvj-gold-light);
+  color: var(--pvj-gold-dark);
+}
+
+.about-us-management-sort-order {
+  background: var(--pvj-pearl);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--text-light);
+  font-family: var(--font-secondary);
+}
+
+.about-us-management-item-actions {
+  margin-top: 15px;
+}
+
+.about-us-management-item-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--font-secondary);
+}
+
+.about-us-management-item-actions button.activate {
+  background: var(--pvj-green);
+  color: var(--white);
+}
+
+.about-us-management-item-actions button.activate:hover {
+  background: var(--green-primary);
+}
+
+.about-us-management-item-actions button.deactivate {
+  background: var(--danger);
+  color: var(--white);
+}
+
+.about-us-management-item-actions button.deactivate:hover {
+  background: var(--danger-dark);
+}
+
+.about-us-management-card-section,
+.about-us-management-point-section {
+  background: var(--pvj-pearl);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  margin-bottom: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.about-us-management-card-section h3,
+.about-us-management-point-section h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: var(--text-dark);
+  font-size: 16px;
+  font-family: var(--font-primary);
+}
+
+/* Journey Entry Cards */
+.about-us-management-journey-entry-card {
+  background: var(--pvj-pearl);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about-us-management-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.about-us-management-entry-header h4 {
+  margin: 0;
+  color: var(--text-dark);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--font-primary);
+}
+
+.about-us-management-remove-entry-btn {
+  background: var(--danger);
+  color: var(--white);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: var(--font-secondary);
+}
+
+.about-us-management-remove-entry-btn:hover {
+  background: var(--danger-dark);
+}
+
+/* Form Actions */
+.about-us-management-form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.about-us-management-add-more-btn {
+  background: var(--pvj-green);
+  color: var(--white);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-secondary);
+}
+
+.about-us-management-add-more-btn:hover {
+  background: var(--green-primary);
+}
+
+.about-us-management-submit-btn {
+  background: var(--pvj-green);
+  color: var(--white);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: var(--font-secondary);
+}
+
+.about-us-management-submit-btn:hover {
+  background: var(--green-primary);
+}
+
+.about-us-management-submit-btn:disabled {
+  background: var(--text-light);
+  cursor: not-allowed;
+}
+
+/* Common Heading Section */
+.about-us-management-common-heading-section {
+  background: var(--green-light);
+  border: 1px solid var(--pvj-green);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.about-us-management-common-heading-section .about-us-management-form-group label {
+  font-weight: 600;
+  color: var(--pvj-green);
+  margin-bottom: 8px;
+  display: block;
+  font-family: var(--font-secondary);
+}
+
+.about-us-management-common-heading-section .about-us-management-form-group input {
+  border: 2px solid var(--pvj-green);
+  background: var(--white);
+}
+
+.about-us-management-common-heading-section .about-us-management-form-group input:focus {
+  border-color: var(--green-primary);
+  box-shadow: 0 0 0 2px rgba(14, 89, 60, 0.2);
+}
+
+@media (max-width: 768px) {
+  .about-us-management-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .about-us-management-about-us-tabs {
+    justify-content: center;
+  }
+
+  .about-us-management-tab-button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .about-us-management-about-us-content {
+    padding: 20px;
+  }
+}

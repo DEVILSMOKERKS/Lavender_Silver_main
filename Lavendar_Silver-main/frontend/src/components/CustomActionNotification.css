@@ -1,0 +1,132 @@
+.custom-action-notif-popup {
+    position: fixed;
+    bottom: 2.2rem;
+    right: 2.2rem;
+    background: var(--white);
+    border: 2px solid var(--pvj-green);
+    box-shadow: var(--card-shadow-hover);
+    border-radius: var(--featured-border-radius);
+    display: flex;
+    align-items: flex-start;
+    min-width: 320px;
+    max-width: 370px;
+    padding: 18px 22px 18px 16px;
+    z-index: 9999;
+    animation: custom-notif-fadein 0.3s;
+}
+
+.custom-action-notif-icon {
+    margin-right: 14px;
+    font-size: 1.6rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.custom-action-notif-info {
+    flex: 1;
+}
+
+.custom-action-notif-title {
+    font-size: 1.08rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--text-dark);
+}
+
+.custom-action-notif-product {
+    display: flex;
+    align-items: center;
+}
+
+.custom-action-notif-img {
+    width: 54px;
+    height: 54px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-right: 12px;
+    border: 1.5px solid var(--green-light);
+    background: var(--cream-bg);
+}
+
+.custom-action-notif-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-action-notif-name {
+    font-size: 1.02rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 2px;
+    line-height: 1.2;
+}
+
+.custom-action-notif-price {
+    font-size: 1rem;
+    color: var(--pvj-green);
+    font-weight: 600;
+}
+
+.custom-action-notif-close {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-top: 2px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.custom-action-notif-close:hover {
+    color: var(--red-primary);
+}
+
+.custom-action-notif-listing {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.custom-action-notif-viewmore {
+    display: inline-block;
+    margin-top: 4px;
+    color: var(--pvj-green);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.01rem;
+    transition: color 0.18s;
+}
+
+.custom-action-notif-viewmore:hover {
+    color: var(--green-primary);
+    text-decoration: underline;
+}
+
+@keyframes custom-notif-fadein {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .custom-action-notif-popup {
+        right: 0.5rem;
+        left: 0.5rem;
+        min-width: unset;
+        max-width: 95vw;
+        padding: 12px 10px 12px 10px;
+    }
+
+    .custom-action-notif-img {
+        width: 44px;
+        height: 44px;
+    }
+}

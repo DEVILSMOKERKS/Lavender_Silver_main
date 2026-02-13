@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+.thankyou-container {
+  min-height: 100vh;
+  background: radial-gradient(circle, #e6fff3 60%, #c1e7d9 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px 50px 0px;
+  gap: 0;
+}
+
+.thankyou-image-section {
+  background: white;
+  border-radius: 24px 0 0 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  width: 35%;
+  height: 583px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thankyou-ring-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px 0 0 24px;
+}
+
+.thankyou-card {
+  background: #fff;
+  border-radius: 24px 24px 24px 24px;
+  border: 1px solid red;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  width: 750px;
+  border: 2px solid #d2c3a3;
+  border-left: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.thankyou-border{
+    border: 1px solid black;
+    border-radius: 24px;
+    padding: 20px;
+}
+
+.thankyou-header::after{
+  text-align: center;
+  margin-bottom: 1.2rem;
+  content: '';
+    display: inline-block;
+    width: 100px;
+    height: 37px;
+    position: absolute;
+    top: 119px;
+    left: 346px;
+    background-image: url('../../assets/img/icons/diamond4.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* margin-right: 8px; */
+    vertical-align: middle;
+}
+
+.thankyou-header h2 {
+  font-family: var(--font-primary);
+  color: #17624a;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0 0;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+.thankyou-diamond-icon {
+  width: 36px;
+  margin-bottom: -10px;
+}
+
+.thankyou-diamond-inline {
+  width: 36px;
+  margin-left: 8px;
+  margin-bottom: -8px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ececec;
+  margin: 1.2rem 0;
+}
+
+.thankyou-details {
+  margin-bottom: 1.2rem;
+}
+
+.thankyou-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.12rem;
+  color: #888;
+  margin-bottom: 0.4rem;
+  font-family: var(--font-primary);
+  font-weight: 500;
+}
+
+.thankyou-row span b {
+  color: #222;
+  font-weight: 700;
+}
+
+.thankyou-row.total {
+  font-weight: bold;
+  color: #222;
+  font-size: 1.18rem;
+  margin-top: 0.5rem;
+}
+
+.thankyou-info {
+  margin-bottom: 1.2rem;
+}
+
+.thankyou-info > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.7rem;
+  font-size: 1.08rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+.thankyou-info b {
+  color: #222;
+  font-weight: 600;
+}
+
+.thankyou-track-btn {
+  display: block;
+  width: 40%;
+  margin: 1.2rem auto 0 auto;
+  background: #17624a;
+  color: #fff;
+  font-size: 1.18rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 0.9rem 0;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(23,98,74,0.08);
+}
+
+.thankyou-track-btn:hover {
+  background: #218c6a;
+}
+
+.thankyou-corner-icon {
+  position: absolute;
+  bottom: 51px;
+  right: 54px;
+  width: 38px;
+  opacity: 0.7;
+}
+
+@media (max-width: 1100px) {
+  .thankyou-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .thankyou-image-section, .thankyou-card {
+    border-radius: 24px;
+    width: 95vw;
+    max-width: 500px;
+  }
+  .thankyou-card {
+    border-left: 2px solid #d2c3a3;
+    margin-top: 2rem;
+  }
+}

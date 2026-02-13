@@ -1,0 +1,447 @@
+/* Privacy Policy Management Styles */
+.privacy-policy-management {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.privacy-policy-management-page-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.privacy-policy-management-page-header h1 {
+  color: var(--text-dark);
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family: var(--font-primary);
+}
+
+.privacy-policy-management-page-header p {
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+/* Loading State */
+.privacy-policy-management-loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+/* Tabs */
+.privacy-policy-management-policy-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--pvj-pearl);
+  padding-bottom: 10px;
+}
+
+.privacy-policy-management-tab-button {
+  background: var(--pvj-pearl);
+  border: none;
+  padding: 12px 20px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-light);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.privacy-policy-management-tab-button:hover {
+  background: var(--green-light);
+  color: var(--text-dark);
+}
+
+.privacy-policy-management-tab-button.active {
+  background: var(--green-primary);
+  color: var(--white);
+}
+
+.privacy-policy-management-tab-icon {
+  font-size: 1.1rem;
+}
+
+/* Tab Content */
+.privacy-policy-management-tab-content {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-policy-management-tab-content h2 {
+  color: var(--text-dark);
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  font-family: var(--font-primary);
+}
+
+/* Form Sections */
+.privacy-policy-management-add-policy-section {
+  margin-bottom: 30px;
+}
+
+.privacy-policy-management-add-policy-section h3 {
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-family: var(--font-primary);
+}
+
+/* Form Groups */
+.privacy-policy-management-form-group {
+  margin-bottom: 20px;
+}
+
+.privacy-policy-management-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.privacy-policy-management-form-group input,
+.privacy-policy-management-form-group textarea,
+.privacy-policy-management-form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--green-light);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.privacy-policy-management-form-group input:focus,
+.privacy-policy-management-form-group textarea:focus,
+.privacy-policy-management-form-group select:focus {
+  outline: none;
+  border-color: var(--green-primary);
+  box-shadow: 0 0 0 2px rgba(14, 89, 60, 0.25);
+}
+
+.privacy-policy-management-form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Policy Entry Cards */
+.privacy-policy-management-policy-entry-card {
+  background: var(--white);
+  border: 1px solid var(--green-light);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.privacy-policy-management-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--pvj-pearl);
+}
+
+.privacy-policy-management-entry-header h4 {
+  margin: 0;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.privacy-policy-management-remove-entry-btn {
+  background: var(--red-primary);
+  color: var(--white);
+  border: none;
+  padding: 6px 12px;
+  border-radius: var(--border-radius);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.privacy-policy-management-remove-entry-btn:hover {
+  background: var(--maroon-primary);
+}
+
+/* Subsections Container */
+.privacy-policy-management-subsections-container {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 2px solid var(--pvj-pearl);
+}
+
+.privacy-policy-management-subsections-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.privacy-policy-management-subsections-header h5 {
+  margin: 0;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.privacy-policy-management-add-subsection-btn {
+  background: var(--pvj-gold);
+  color: var(--text-dark);
+  border: none;
+  padding: 8px 16px;
+  border-radius: var(--border-radius);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.privacy-policy-management-add-subsection-btn:hover:not(:disabled) {
+  background: var(--gold-primary);
+}
+
+/* Subsection Cards */
+.privacy-policy-management-subsection-card {
+  background: var(--pvj-pearl);
+  border: 1px solid var(--green-light);
+  border-radius: var(--border-radius);
+  padding: 15px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+.privacy-policy-management-subsection-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--green-light);
+}
+
+.privacy-policy-management-subsection-header h6 {
+  margin: 0;
+  color: var(--text-dark);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.privacy-policy-management-remove-subsection-btn {
+  background: var(--red-primary);
+  color: var(--white);
+  border: none;
+  padding: 4px 8px;
+  border-radius: var(--border-radius);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.privacy-policy-management-remove-subsection-btn:hover {
+  background: var(--maroon-primary);
+}
+
+/* Form Actions */
+.privacy-policy-management-form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid var(--pvj-pearl);
+}
+
+.privacy-policy-management-add-more-btn {
+  background: var(--green-primary);
+  color: var(--white);
+  padding: 12px 20px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.privacy-policy-management-add-more-btn:hover {
+  background: var(--pvj-green);
+}
+
+.privacy-policy-management-submit-btn {
+  background: var(--green-primary);
+  color: var(--white);
+  padding: 12px 30px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.privacy-policy-management-submit-btn:hover {
+  background: var(--pvj-green);
+}
+
+.privacy-policy-management-submit-btn:disabled {
+  background: var(--text-light);
+  cursor: not-allowed;
+}
+
+/* Update Note */
+.privacy-policy-management-update-note {
+  background: var(--green-light);
+  border: 1px solid var(--green-primary);
+  border-radius: var(--border-radius);
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.privacy-policy-management-update-note p {
+  margin: 0;
+  color: var(--green-primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Existing Policy Display */
+.privacy-policy-management-existing-policy {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid var(--pvj-pearl);
+}
+
+.privacy-policy-management-existing-policy h3 {
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-family: var(--font-primary);
+}
+
+.privacy-policy-management-policy-item {
+  background: var(--pvj-pearl);
+  border: 1px solid var(--green-light);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.privacy-policy-management-policy-item h4 {
+  color: var(--text-dark);
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.privacy-policy-management-policy-item p {
+  color: var(--text-light);
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.privacy-policy-management-policy-item small {
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+
+/* Subsections Display */
+.privacy-policy-management-subsections-display {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid var(--green-light);
+}
+
+.privacy-policy-management-subsections-display h5 {
+  color: var(--text-dark);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.privacy-policy-management-subsection-display {
+  background: var(--pvj-pearl);
+  border: 1px solid var(--green-light);
+  border-radius: var(--border-radius);
+  padding: 12px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.privacy-policy-management-subsection-display h6 {
+  color: var(--text-dark);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.privacy-policy-management-subsection-display p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .privacy-policy-management {
+    padding: 15px;
+  }
+
+  .privacy-policy-management-policy-tabs {
+    flex-direction: column;
+  }
+
+  .privacy-policy-management-tab-button {
+    margin: 2px 0;
+    border-radius: 6px;
+  }
+
+  .privacy-policy-management-tab-content {
+    padding: 20px;
+  }
+
+  .privacy-policy-management-add-policy-section {
+    padding: 20px;
+  }
+
+  .privacy-policy-management-form-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .privacy-policy-management-add-more-btn,
+  .privacy-policy-management-submit-btn {
+    width: 100%;
+  }
+
+  .privacy-policy-management-entry-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .privacy-policy-management-remove-entry-btn {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-policy-management-page-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .privacy-policy-management-tab-content {
+    padding: 15px;
+  }
+
+  .privacy-policy-management-policy-entry-card {
+    padding: 15px;
+  }
+}

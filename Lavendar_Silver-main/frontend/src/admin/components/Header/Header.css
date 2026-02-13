@@ -1,0 +1,590 @@
+.admin-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 0 24px;
+    height: 64px;
+    border-bottom: 1px solid #e0e0e0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    margin-left: 260px;
+}
+
+.admin-header-left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.admin-header-logo {
+    width: 60px;
+    height: 60px;
+    max-height: 40px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: none;
+}
+
+.admin-header-title {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #222;
+    font-family: var(--font-primary);
+    display: block;
+}
+
+.admin-header-center {
+    display: flex;
+    flex: 1;
+
+    align-items: center;
+}
+
+.admin-header-search-wrapper {
+    display: flex;
+    align-items: center;
+    background: #F5F5F5;
+    border-radius: 6px;
+    padding: 0 18px;
+    height: 46px;
+    min-width: 380px;
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.04));
+    margin-right: 10px;
+}
+
+.admin-header-search-icon {
+    margin-right: 16px;
+    color: #222;
+    flex-shrink: 0;
+}
+
+.admin-header-search {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    color: #222;
+}
+
+.admin-header-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.admin-header-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e0e0e0;
+}
+
+.admin-header-hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.admin-header-hamburger span {
+    display: block;
+    width: 22px;
+    height: 3px;
+    background: #222;
+    margin: 3px 0;
+    border-radius: 2px;
+    transition: all 0.2s;
+}
+
+.admin-header-bell {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    background: #dc2626;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+    min-width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-header-user-menu {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    padding: 2px 6px;
+    border-radius: 20px;
+    transition: background 0.2s;
+    position: relative;
+}
+
+.admin-dashboard-main {
+    margin-top: 64px;
+    margin-left: 280px;
+}
+
+.admin-header-dropdown-menu {
+    position: absolute;
+    top: 54px;
+    right: 0;
+    min-width: 150px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    padding: 8px 0;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    animation: fadeInDropdown 0.18s ease;
+}
+
+@keyframes fadeInDropdown {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.admin-header-dropdown-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #222;
+    transition: background 0.15s;
+}
+
+.admin-header-dropdown-item:hover {
+    background: #f5f5f5;
+}
+
+.admin-header-profile-success {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: #e6f9ed;
+    color: #219150;
+    border: 1px solid #b6e7c9;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    z-index: 3000;
+    animation: fadeInSuccess 0.2s;
+}
+
+@keyframes fadeInSuccess {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.admin-header-avatar-fallback {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    color: #7b2b3e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border: 2px solid #e0e0e0;
+}
+
+.admin-header-avatar-large {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 16px auto;
+    display: block;
+}
+
+.admin-header-avatar-fallback-large {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    color: #7b2b3e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 auto 16px auto;
+}
+
+.admin-header-profile-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 4000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-header-profile-modal-content {
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px 32px 24px 32px;
+    min-width: 320px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.18);
+    text-align: center;
+    position: relative;
+}
+
+.admin-header-profile-close {
+    margin-top: 18px;
+    background: var(--pvj-green, #0E593C);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.admin-header-profile-error {
+    position: fixed;
+    top: 80px;
+    right: 24px;
+    background: #fee;
+    color: #c53030;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    z-index: 1000;
+    animation: fadeInSuccess 0.3s ease-in-out;
+    border: 1px solid #fed7d7;
+    max-width: 300px;
+}
+
+/* Modal Styles for Email Update */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.modal-close:hover {
+    background: #f5f5f5;
+    color: #222;
+}
+
+.modal-body {
+    margin-bottom: 20px;
+}
+
+.modal-body p {
+    margin: 0 0 16px 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #222;
+    font-size: 14px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+}
+
+.form-input::placeholder {
+    color: #999;
+}
+
+/* Password strength indicator */
+.password-strength {
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.password-strength-bar {
+    height: 4px;
+    background: #e0e0e0;
+    border-radius: 2px;
+    margin-top: 4px;
+    overflow: hidden;
+}
+
+.password-strength-fill {
+    height: 100%;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.password-strength-weak {
+    background: #ff4444;
+    width: 25%;
+}
+
+.password-strength-fair {
+    background: #ffaa00;
+    width: 50%;
+}
+
+.password-strength-good {
+    background: #ffdd00;
+    width: 75%;
+}
+
+.password-strength-strong {
+    background: #00cc44;
+    width: 100%;
+}
+
+.password-requirements {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #666;
+}
+
+.password-requirement {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.password-requirement.met {
+    color: #00cc44;
+}
+
+.password-requirement.unmet {
+    color: #999;
+}
+
+.password-requirement-icon {
+    margin-right: 4px;
+    font-size: 10px;
+}
+
+.error-message {
+    color: #c53030;
+    font-size: 13px;
+    margin-top: 6px;
+    padding: 8px 12px;
+    background: #fee;
+    border: 1px solid #fed7d7;
+    border-radius: 4px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding-top: 16px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 80px;
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn-primary {
+    background: #007bff;
+    color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background: #0056b3;
+}
+
+.btn-secondary {
+    background: #f8f9fa;
+    color: #222;
+    border: 1px solid #ddd;
+}
+
+.btn-secondary:hover:not(:disabled) {
+    background: #e9ecef;
+}
+
+/* Responsive adjustments for modals */
+@media (max-width: 600px) {
+    .admin-header-profile-modal-content {
+        width: 90%;
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    
+    .modal-footer {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .admin-header {
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .admin-header-left {
+        flex: 0 0 auto;
+    }
+
+    .admin-header-center {
+        flex: 1 1 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .admin-header-title {
+        display: none;
+    }
+
+    .admin-header-right {
+        flex: 0 0 auto;
+    }
+
+    .admin-dashboard-main {
+        margin-left: 0;
+    }
+
+    .admin-header-search-wrapper {
+        display: none !important;
+    }
+
+    .admin-header-logo {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .admin-header {
+        padding: 0 10px;
+        height: 54px;
+    }
+
+    .admin-dashboard-main {
+        margin-top: 54px;
+    }
+
+    .admin-header-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .admin-header-title {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .admin-header-hamburger {
+        display: flex;
+    }
+}

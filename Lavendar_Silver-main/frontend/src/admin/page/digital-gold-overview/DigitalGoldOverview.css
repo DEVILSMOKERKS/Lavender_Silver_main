@@ -1,0 +1,827 @@
+/* Digital Gold Overview Styles */
+.admin-digi-go-over {
+  min-height: 100vh;
+  padding: 32px 10px;
+}
+
+.admin-digi-go-over-header {
+  margin-bottom: 16px;
+}
+
+.admin-digi-go-over-title {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0.54px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.admin-digi-go-over-controls {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 54px;
+  align-items: center;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+
+
+  border-radius: 6px;
+  padding: 9px 20px;
+  border: 1px solid #0000001A;
+  box-shadow: 0 0 3px #0000001A;
+}
+
+.admin-digi-go-over-search-container {
+  position: relative;
+  flex: 1;
+  min-width: 280px;
+}
+
+.admin-digi-go-over-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: #9ca3af;
+}
+
+.admin-digi-go-over-search-input {
+  width: 100%;
+  padding: 6px 12px 6px 40px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #374151;
+  background: white;
+  transition: border-color 0.2s ease;
+}
+
+.admin-digi-go-over-search-input::placeholder {
+  color: #9ca3af;
+}
+
+.admin-digi-go-over-filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.admin-digi-go-over-filter-dropdown {
+  position: relative;
+}
+
+.admin-digi-go-over-filter-select {
+  appearance: none;
+  padding: 11px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+  min-width: 95px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 100%;
+  letter-spacing: 0.3px;
+  color: #000000;
+}
+
+.admin-digi-go-over-dropdown-icon {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+.admin-digi-go-over-add-transaction-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 9px;
+  background: #0E593C;
+  color: #FFFFFF;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.admin-digi-go-over-add-transaction-btn:hover {
+  background: #047857;
+}
+
+.admin-digi-go-over-stats-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+  flex-wrap: nowrap;
+}
+
+.admin-digi-go-over-stat-card {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  padding: 18px 10px;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-digi-go-over-stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.admin-digi-go-over-stat-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.admin-digi-go-over-stat-text {
+  flex: 1;
+}
+
+.admin-digi-go-over-stat-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.36px;
+}
+
+.admin-digi-go-over-stat-value {
+  font-family: 'Crimson Pro', serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0.6px;
+  margin-top: 10px;
+}
+
+.admin-digi-go-over-stat-icon {
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-digi-go-over-stat-icon-green {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.admin-digi-go-over-stat-icon-blue {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.admin-digi-go-over-stat-icon-purple {
+  background: #ede9fe;
+  color: #7c3aed;
+}
+
+.admin-digi-go-over-stat-icon-pink {
+  background: #F9E4E6;
+  color: #ec4899;
+}
+
+.admin-digi-go-over-content-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.admin-digi-go-over-chart-section {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.admin-digi-go-over-chart-container {
+  background: #fff;
+  padding: 24px 16px 0 16px;
+  padding-top: 40px;
+}
+
+.admin-digi-go-over-chart-header {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-digi-go-over-chart-toggle-btn:hover {
+  background-color: #f3f4f6 !important;
+  color: #374151 !important;
+  border-color: #d1d5db !important;
+}
+
+.admin-digi-go-over-chart-toggle-btn:active {
+  transform: scale(0.95);
+}
+
+.admin-digi-go-over-transactions-section {
+  margin-bottom: 32px;
+}
+
+.admin-digi-go-over-chart-title {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+
+.admin-digi-go-over-chart-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  /* Regular weight */
+  font-style: normal;
+  /* 'Regular' is not valid */
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0;
+  /* 0% replaced with 0 */
+  vertical-align: middle;
+  color: #000000CC;
+  margin: 7px 0;
+}
+
+.admin-digi-go-over-chart-legend {
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.admin-digi-go-over-legend-label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #000000CC;
+  margin: 7px 0;
+}
+
+.admin-digi-go-over-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.admin-digi-go-over-legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.admin-digi-go-over-legend-dot.actual {
+  background: #0E593C;
+}
+
+.admin-digi-go-over-legend-dot.predicted {
+  background: #F14344;
+}
+
+.admin-digi-go-over-chart-placeholder {
+  position: relative;
+  height: 300px;
+  background: linear-gradient(to bottom, #f9fafb 0%, #ffffff 100%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.admin-digi-go-over-chart-line {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.admin-digi-go-over-chart-point {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #059669;
+  border-radius: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.admin-digi-go-over-chart-point.predicted {
+  background: #dc2626;
+}
+
+.admin-digi-go-over-chart-highlight {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(5, 150, 105, 0.1);
+  border: 2px solid #059669;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.admin-digi-go-over-highlight-date {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.admin-digi-go-over-highlight-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: #059669;
+}
+
+
+.admin-digi-go-over-transactions-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.admin-digi-go-over-transactions-table {
+  background-color: #FFFFFF;
+  overflow: hidden;
+  box-shadow: 0 0 3px #00000033;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.admin-digi-go-over-transactions-header {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr 1fr 0.8fr 1fr 1fr 1fr;
+  background: #F5F2E1;
+  border-bottom: 1.5px solid #00000033;
+}
+
+.admin-digi-go-over-trans-col {
+  padding: 12px;
+  color: #6b7280;
+
+  font-family: 'Crimson Pro', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  color: #000000;
+  display: flex;
+  align-items: center;
+}
+
+/* Center only the ACTIONS column header and cells */
+.admin-digi-go-over-trans-col:last-child,
+.admin-digi-go-over-actions-col {
+  justify-content: center;
+  text-align: center;
+}
+
+.admin-digi-go-over-transactions-row {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr 1.2fr 0.8fr 1fr 1fr 1fr 0.8fr;
+}
+
+
+.admin-digi-go-over-transactions-row .admin-digi-go-over-trans-col {
+  padding: 12px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #00000033;
+
+  font-family: 'Crimson Pro', serif;
+  font-weight: 400;
+  /* Regular weight */
+  font-style: normal;
+  /* 'Regular' is not valid */
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.36px;
+  /* 3% of 12px = 0.36px */
+
+}
+
+.admin-digi-go-over-user-col {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.admin-digi-go-over-type-badge {
+  display: inline-block;
+  padding: 6px 9px;
+  border-radius: 16px;
+
+  font-family: 'Crimson Pro', serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 10px;
+  letter-spacing: 0.36px;
+}
+
+.admin-digi-go-over-type-buy {
+  background: #DEFAE8;
+  color: #0E593C;
+}
+
+.admin-digi-go-over-type-sell {
+  background: #F9E4E6;
+  color: #C53C43;
+}
+
+.admin-digi-go-over-amount-col {
+  font-weight: 600 !important;
+  line-height: 100%;
+}
+
+/* .admin-digi-go-over-gold-col {
+  
+} */
+
+.admin-digi-go-over-status-badge {
+  font-family: 'Crimson Pro', serif;
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.admin-digi-go-over-status-success {
+  background: #D9FFEE;
+  color: #0E593C;
+}
+
+.admin-digi-go-over-status-pending {
+  background: #FFEED0;
+  color: #BA8B23;
+}
+
+.admin-digi-go-over-actions-col {
+  justify-content: center;
+}
+
+.admin-digi-go-over-action-buttons {
+  display: flex;
+}
+
+.admin-digi-go-over-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.admin-digi-go-over-action-btn:hover {
+  background: #f3f4f6;
+}
+
+.admin-digi-go-over-view-btn {
+  color: #6b7280;
+}
+
+.admin-digi-go-over-view-btn:hover {
+  color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.admin-digi-go-over-delete-btn {
+  color: #6b7280;
+}
+
+.admin-digi-go-over-delete-btn:hover {
+  color: #dc2626;
+  border-color: #dc2626;
+}
+
+.admin-digi-go-over-sidebar-section {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+
+
+
+
+/* Responsive Design */
+/* @media (max-width: 1024px) {
+  .admin-digi-go-over {
+    padding: 24px;
+  }
+  
+  .admin-digi-go-over-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .admin-digi-go-over-search-container {
+    min-width: 100%;
+  }
+  
+  .admin-digi-go-over-filters {
+    justify-content: flex-start;
+  }
+  
+  .admin-digi-go-over-stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .admin-digi-go-over-content-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .admin-digi-go-over-bottom-row {
+    grid-template-columns: 1fr;
+  }
+} */
+
+@media (max-width: 768px) {
+  .admin-digi-go-over {
+    padding: 16px;
+  }
+
+  .admin-digi-go-over-title {
+    font-size: 24px;
+  }
+
+  .admin-digi-go-over-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-digi-go-over-transactions-table {
+    overflow-x: auto;
+  }
+
+  .admin-digi-go-over-transactions-header,
+  .admin-digi-go-over-transactions-row {
+    min-width: 700px;
+  }
+}
+
+.admin-digi-go-over-header-flex {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.admin-digi-go-over-header-icon {
+  height: 11px;
+  width: auto;
+  vertical-align: middle;
+}
+
+/* User name button styles */
+.user-name-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--pvj-green);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: var(--border-radius);
+  transition: all 0.2s;
+  font-family: var(--font-primary);
+}
+
+.user-name-btn:hover {
+  background: var(--green-light);
+  color: var(--pvj-green);
+}
+
+.user-name-btn svg {
+  color: var(--pvj-green);
+}
+
+/* Action buttons */
+.admin-digi-go-over-action-buttons-secondary {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.2s;
+  background: var(--white);
+  border: 1px solid #e5e7eb;
+}
+
+.action-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--card-shadow);
+}
+
+.view-btn {
+  color: var(--pvj-green);
+}
+
+.view-btn:hover {
+  background: var(--green-light);
+}
+
+.delete-btn {
+  color: #dc2626;
+}
+
+.delete-btn:hover {
+  background: #fee2e2;
+}
+
+/* Transaction type badges */
+.transaction-type {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--font-primary);
+}
+
+.transaction-type.buy {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.transaction-type.sell {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* Status badges */
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--font-primary);
+}
+
+.status-badge.success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-badge.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-badge.failed {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.status-badge.cancelled {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+/* Metal Selector Styles */
+.admin-digi-go-over-metal-selector {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.admin-digi-go-over-select-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.admin-digi-go-over-select-group label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--text-dark);
+  margin-bottom: 2px;
+}
+
+.admin-digi-go-over-select {
+  padding: 8px 12px;
+  border: 1px solid var(--pvj-gold);
+  border-radius: 4px;
+  background: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: var(--text-dark);
+  min-width: 140px;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.admin-digi-go-over-select:focus {
+  outline: none;
+  border-color: var(--pvj-gold);
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+
+.admin-digi-go-over-select:disabled {
+  background-color: #f5f5f5;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.admin-digi-go-over-current-rate {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background: var(--cream-bg);
+  border: 1px solid var(--pvj-gold);
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--text-dark);
+}
+
+.admin-digi-go-over-current-rate-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  background: var(--cream-bg);
+  border: 1px solid var(--pvj-gold);
+  border-radius: 6px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-dark);
+  margin: 16px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Metal & Purity Column Styles */
+.admin-digi-go-over-metal-purity-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.admin-digi-go-over-metal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.admin-digi-go-over-metal-type {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 11px;
+}
+
+.admin-digi-go-over-purity {
+  font-size: 10px;
+  color: var(--text-light);
+  font-weight: 400;
+}

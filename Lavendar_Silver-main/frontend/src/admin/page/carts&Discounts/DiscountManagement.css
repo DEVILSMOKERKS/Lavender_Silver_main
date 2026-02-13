@@ -1,0 +1,770 @@
+.admin-discount-container {
+  background: #f7f7f7;
+  min-height: 100vh;
+  font-family: 'Inter', serif;
+}
+
+.admin-discount-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  font-family: "Cinzel", serif;
+  text-align: left;
+  color: #000000;
+  letter-spacing: 3%;
+}
+
+.admin-discount-search-section {
+  margin-bottom: 32px;
+}
+
+.admin-discount-search-box {
+  background: #fff;
+  border-radius: 6px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #0000001A;
+}
+
+.admin-discount-search-filters {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.admin-discount-search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.admin-discount-search-input {
+  padding: 8px 16px 8px 44px;
+  border: 1px solid #0000001A;
+  border-radius: 4px;
+  font-size: 10px;
+  width: 320px;
+  background: #fff;
+  font-family: "Open Sans", sans-serif;
+  transition: border 0.2s;
+  height: 34px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.admin-discount-search-icon {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  left: 16px;
+  color: #bdbdbd;
+  pointer-events: none;
+}
+
+.admin-discount-filter-select {
+  padding: 10px 7px;
+  border: 1px solid #0000001A;
+  border-radius: 4px;
+  font-size: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background: #fafafa;
+  outline: none;
+  cursor: pointer;
+}
+
+.admin-discount-export-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.admin-discount-export-btn {
+  background: #0E593C;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 11px;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 3%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+
+.admin-discount-export-btn:hover {
+  background: #14532d;
+}
+
+.admin-discount-add-btn {
+  background: #3b7c3f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 11px;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 3%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+
+.admin-discount-add-btn:hover {
+  background: #2d5f30;
+}
+
+.admin-discount-stats-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  overflow-x: auto;
+}
+
+.admin-discount-stats-row::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+  display: none;
+}
+
+.admin-discount-stats-card {
+  min-width: 250px;
+  flex: 1;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-discount-stats-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.admin-discount-stats-card-header h3 {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.admin-discount-stats-value {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.admin-discount-stats-change {
+  margin: 0;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.admin-discount-stats-percentage {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.admin-discount-stats-change.admin-discount-positive {
+  color: #3b7c3f;
+}
+
+.admin-discount-stats-change.admin-discount-negative {
+  color: #d32f2f;
+}
+
+.admin-discount-stats-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-discount-stats-icon-blue {
+  background: #e3f2fd;
+  color: #2196f3;
+}
+
+.admin-discount-stats-icon-red {
+  background: #ffebee;
+  color: #f44336;
+}
+
+.admin-discount-stats-icon-purple {
+  background: #ede7f6;
+  color: #673ab7;
+}
+
+.admin-discount-stats-icon-green {
+  background: #e8f5e9;
+  color: #4caf50;
+}
+
+.admin-discount-stats-lucide-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.admin-discount-table-title {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  color: #000000;
+  margin-left: 0;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.admin-discount-table-wrapper {
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.admin-discount-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.admin-discount-table thead tr {
+  background: #F5F2E1;
+  color: #000000;
+  font-family: 'Crimson Pro', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-bottom: 1px solid #00000033;
+}
+
+.admin-discount-tbody tr {
+  border-bottom: 1px solid #00000033;
+  color: #000000;
+}
+
+.admin-discount-tbody tr:last-child {
+  border-bottom: none;
+}
+
+.admin-discount-table th,
+.admin-discount-table td {
+  padding: 14px 20px;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 14px;
+  font-family: "Crimson Pro", serif;
+  font-weight: 400;
+  letter-spacing: 3%;
+}
+
+.admin-discount-table-arrow-icon {
+  color: #88887A;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.admin-discount-table-header-flex {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.admin-discount-action-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  margin: 0 2px;
+}
+
+.admin-discount-action-btn-green {
+  border-color: #2e7d5b;
+}
+
+.admin-discount-action-btn-green svg {
+  color: #2e7d5b;
+}
+
+.admin-discount-action-btn-red {
+  border-color: #d32f2f;
+}
+
+.admin-discount-action-btn-red svg {
+  color: #d32f2f;
+}
+
+.admin-discount-action-btn:hover {
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  border-width: 2.5px;
+}
+
+.admin-discount-action-onoff-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  object-fit: contain;
+  image-rendering: auto;
+}
+
+.admin-discount-action-icon-bg {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.admin-discount-action-divider {
+  display: inline-block;
+  width: 1px;
+  height: 24px;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 0 8px;
+  vertical-align: middle;
+}
+
+/* Modal Styles */
+.admin-discount-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.admin-discount-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.admin-discount-modal-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.admin-discount-modal-content::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+.admin-discount-modal-content::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.admin-discount-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-discount-modal-title {
+  font-family: "Cinzel", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+
+.admin-discount-modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  font-size: 24px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.admin-discount-modal-close:hover {
+  color: #222;
+}
+
+.admin-discount-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-discount-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-discount-form-group label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+}
+
+.admin-discount-modal-input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1.5px solid #e0ece8;
+  font-size: 14px;
+  color: #222;
+  background: #fff;
+  outline: none;
+  transition: all 0.2s;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.admin-discount-modal-input:focus {
+  border-color: #16784f;
+  box-shadow: 0 0 0 3px rgba(22, 120, 79, 0.1);
+}
+
+select.admin-discount-modal-input {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px;
+}
+
+textarea.admin-discount-modal-input {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.admin-discount-modal-btn-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  justify-content: flex-end;
+}
+
+.admin-discount-modal-submit-btn {
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  background: #16784f;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: "Open Sans", sans-serif;
+}
+
+.admin-discount-modal-submit-btn:hover {
+  background: #115c43;
+}
+
+.admin-discount-modal-cancel-btn {
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  background: #eee;
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: "Open Sans", sans-serif;
+}
+
+.admin-discount-modal-cancel-btn:hover {
+  background: #e5e7eb;
+}
+
+@media screen and (max-width: 1200px) {
+  .admin-discount-stats-row {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .admin-discount-stats-card {
+    min-width: 220px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .admin-discount-stats-row {
+    padding: 0 10px;
+  }
+
+  .admin-discount-stats-value {
+    font-size: 20px;
+  }
+
+  .admin-discount-stats-change {
+    font-size: 12px;
+  }
+
+  .admin-discount-stats-percentage {
+    font-size: 14px;
+  }
+
+  .admin-discount-stats-card {
+    min-width: 200px;
+  }
+
+  .admin-discount-modal-content {
+    width: 95%;
+    margin: 10px;
+    padding: 15px;
+  }
+}
+
+.admin-cart-discount-container .discount-display-options-label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.admin-cart-discount-container .discount-display-options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-cart-discount-container .discount-display-option-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.admin-cart-discount-container .create-discount-button {
+  background: #3b7c3f;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.admin-cart-discount-container .no-discounts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  padding: 40px 0;
+  color: #666;
+  font-weight: 500;
+}
+
+.admin-cart-discount-container .no-discounts-icon {
+  color: #888;
+}
+
+.admin-cart-discount-container .no-discounts-subtext {
+  color: #888;
+  margin: 0;
+}
+
+.admin-cart-discount-container .usage-progress-bar-container {
+  background: #e5e5e5;
+  height: 5px;
+  border-radius: 4px;
+  width: 80px;
+  margin-top: 2px;
+}
+
+.admin-cart-discount-container .usage-progress-bar {
+  background: #2d3a8c;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.admin-cart-discount-container .usage-usage-text {
+  color: #2d3a8c;
+  font-weight: 500;
+}
+
+.admin-cart-discount-container .usage-limit-text {
+  color: #888;
+}
+
+.admin-cart-discount-container .usage-text-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.admin-cart-discount-container .period-text {
+  font-size: 0.85em;
+  color: #666;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.admin-cart-discount-container .status-active {
+  background: #e6f9f0;
+  color: #3b7c3f;
+  padding: 2px 12px;
+  border-radius: 12px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.admin-cart-discount-container .status-inactive {
+  background: #ffeaea;
+  color: #d32f2f;
+  padding: 2px 12px;
+  border-radius: 12px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.admin-cart-discount-container .actions-cell {
+  display: flex;
+  align-items: center;
+}
+
+/* Delete Confirmation Modal Styles */
+.admin-discount-delete-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1200;
+}
+
+.admin-discount-delete-modal {
+  background: #fff;
+  border-radius: 10px;
+  padding: 32px 28px 24px 28px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
+  min-width: 320px;
+  max-width: 95vw;
+  text-align: center;
+}
+
+.admin-discount-delete-modal h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+  color: #d32f2f;
+}
+
+.admin-discount-delete-modal p {
+  color: #444;
+  margin-bottom: 24px;
+}
+
+.admin-discount-delete-modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.admin-discount-delete-btn {
+  background: #d32f2f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  min-width: 110px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+
+.admin-discount-delete-btn:hover {
+  background: #b71c1c;
+}
+
+.admin-discount-cancel-btn {
+  background: #f5f5f5;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  min-width: 110px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.admin-discount-cancel-btn:hover {
+  background: #e0e0e0;
+}
+
+.admin-action-icon-bg {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.admin-action-icon-bg img {
+  padding: 5px;
+}

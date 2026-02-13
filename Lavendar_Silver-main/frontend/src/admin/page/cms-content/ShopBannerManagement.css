@@ -1,0 +1,322 @@
+/* Shop Banner Management Styles */
+.shop-banner-management {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: var(--white);
+  font-family: var(--font-secondary);
+}
+
+.shop-banner-management-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.shop-banner-management-header h1 {
+  color: var(--text-dark);
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--font-primary);
+  margin-bottom: 10px;
+}
+
+.shop-banner-management-header p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  font-family: var(--font-secondary);
+}
+
+.shop-banner-management-content {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+}
+
+.shop-banner-management-loading {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-light);
+  font-size: 1.1rem;
+  font-family: var(--font-secondary);
+}
+
+.shop-banner-management-form-section {
+  padding: 30px;
+}
+
+.shop-banner-management-form-section h2 {
+  color: var(--text-dark);
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: var(--font-primary);
+  margin-bottom: 25px;
+  text-align: center;
+  border-bottom: 2px solid var(--pvj-green);
+  padding-bottom: 10px;
+}
+
+.shop-banner-management-update-note {
+  background: var(--green-light);
+  border: 1px solid var(--pvj-green);
+  border-radius: var(--border-radius);
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.shop-banner-management-update-note p {
+  margin: 0;
+  color: var(--pvj-green);
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: var(--font-secondary);
+}
+
+.shop-banner-management-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.shop-banner-management-banner-section {
+  background: var(--cream-bg);
+  padding: 25px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}
+
+.shop-banner-management-banner-section h3 {
+  color: var(--text-dark);
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: var(--font-primary);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--pvj-green);
+}
+
+.shop-banner-management-form-group {
+  margin-bottom: 20px;
+}
+
+.shop-banner-management-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text-dark);
+  font-family: var(--font-secondary);
+}
+
+.shop-banner-management-form-group input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-family: var(--font-secondary);
+  color: var(--text-dark);
+  background: var(--white);
+  transition: border-color 0.3s ease;
+}
+
+.shop-banner-management-form-group input[type="text"]:focus {
+  outline: none;
+  border-color: var(--pvj-green);
+  box-shadow: 0 0 0 3px rgba(14, 89, 60, 0.1);
+}
+
+.shop-banner-management-file-input {
+  width: 100%;
+  padding: 8px;
+  border: 2px dashed var(--pvj-green);
+  border-radius: var(--border-radius);
+  background: var(--cream-bg);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.shop-banner-management-file-input:hover {
+  background: var(--green-light);
+  border-color: var(--pvj-green);
+}
+
+.shop-banner-management-form-group small {
+  display: block;
+  margin-top: 5px;
+  color: var(--text-light);
+  font-size: 0.85rem;
+  font-family: var(--font-secondary);
+}
+
+.shop-banner-management-image-preview {
+  margin-top: 15px;
+  padding: 15px;
+  background: var(--white);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}
+
+.shop-banner-management-image-preview label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: var(--text-dark);
+  font-family: var(--font-secondary);
+}
+
+.shop-banner-management-preview-image {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+}
+
+.shop-banner-management-form-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid var(--cream-bg);
+}
+
+.shop-banner-management-submit-btn {
+  background: var(--pvj-green);
+  color: var(--white);
+  padding: 12px 30px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--font-secondary);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 200px;
+}
+
+.shop-banner-management-submit-btn:hover {
+  background: var(--pvj-maroon);
+}
+
+.shop-banner-management-submit-btn:disabled {
+  background: var(--text-light);
+  cursor: not-allowed;
+}
+
+.shop-banner-management-current-banners {
+  padding: 30px;
+  border-top: 2px solid var(--cream-bg);
+  background: var(--cream-bg);
+}
+
+.shop-banner-management-current-banners h3 {
+  color: var(--text-dark);
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: var(--font-primary);
+  margin-bottom: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--pvj-green);
+}
+
+.shop-banner-management-banners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.shop-banner-management-current-banner {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  text-align: center;
+  box-shadow: var(--card-shadow);
+}
+
+.shop-banner-management-current-banner h4 {
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--font-primary);
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--cream-bg);
+}
+
+.shop-banner-management-current-image {
+  width: 100%;
+  max-height: 150px;
+  border-radius: var(--border-radius);
+  margin-bottom: 10px;
+  box-shadow: var(--card-shadow);
+}
+
+.shop-banner-management-no-image {
+  background: var(--cream-bg);
+  border: 2px dashed var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 40px 20px;
+  color: var(--text-light);
+  font-style: italic;
+  font-family: var(--font-secondary);
+  margin-bottom: 10px;
+}
+
+.shop-banner-management-alt-text {
+  margin: 0;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-family: var(--font-secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .shop-banner-management {
+    padding: 15px;
+  }
+
+  .shop-banner-management-header h1 {
+    font-size: 2rem;
+  }
+
+  .shop-banner-management-form-section {
+    padding: 20px;
+  }
+
+  .shop-banner-management-banner-section {
+    padding: 20px;
+  }
+
+  .shop-banner-management-banners-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-banner-management-current-banners {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-banner-management-form-section {
+    padding: 15px;
+  }
+
+  .shop-banner-management-banner-section {
+    padding: 15px;
+  }
+
+  .shop-banner-management-form-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .shop-banner-management-submit-btn {
+    width: 100%;
+  }
+
+  .shop-banner-management-current-banners {
+    padding: 15px;
+  }
+}

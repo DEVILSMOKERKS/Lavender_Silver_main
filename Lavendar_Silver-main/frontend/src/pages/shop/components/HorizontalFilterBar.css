@@ -1,0 +1,117 @@
+.horizontal-filter-bar {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.filter-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-dropdown-wrapper {
+  position: relative;
+}
+
+.filter-dropdown-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: var(--font-body);
+  color: #333;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.filter-dropdown-btn:hover {
+  border-color: var(--lavender-primary);
+  color: var(--lavender-primary);
+}
+
+.filter-dropdown-btn svg {
+  transition: transform 0.2s;
+}
+
+.filter-dropdown-wrapper:hover .filter-dropdown-btn svg,
+.filter-dropdown-wrapper:focus-within .filter-dropdown-btn svg {
+  transform: rotate(180deg);
+}
+
+.filter-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1000;
+  margin-top: 4px;
+}
+
+.filter-dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  text-align: left;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: var(--font-body);
+  color: #333;
+  transition: background 0.2s;
+}
+
+.filter-dropdown-item:hover {
+  background: var(--lavender-lighter);
+  color: var(--lavender-primary);
+}
+
+.filter-dropdown-item.active {
+  background: var(--lavender-lighter);
+  color: var(--lavender-primary);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+.horizontal-filter-bar {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  
+  /* Niche push karne ke liye ye add kar */
+  margin-top: 20px; 
+  /* Ya phir agar tu header ke relative position kar raha hai */
+  padding-top: 10px; 
+}
+.horizontal-filter-bar {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  position: relative; /* Dropdowns ko context dene ke liye */
+  margin-top: 15px;    /* Header se gap dene ke liye */
+  padding: 10px 20px; /* Thoda sa andar se space dene ke liye */
+}
+  .filter-dropdown-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

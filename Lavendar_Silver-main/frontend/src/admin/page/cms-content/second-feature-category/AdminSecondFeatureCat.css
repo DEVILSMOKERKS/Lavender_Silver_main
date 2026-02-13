@@ -1,0 +1,413 @@
+/* Second Feature Category Admin Styles */
+.admin-sec-feat-cat-root {
+  min-height: 100vh;
+  padding: 32px 10px;
+}
+
+.admin-sec-feat-cat-header {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.admin-sec-feat-cat-title {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #0e593c;
+  margin-bottom: 0;
+}
+
+.admin-sec-feat-cat-controls {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #fff;
+  border-radius: 6px;
+  padding: 9px 20px;
+  border: 1px solid #0001;
+  box-shadow: 0 0 3px #0001;
+}
+
+.admin-sec-feat-cat-search-container {
+  position: relative;
+  min-width: 220px;
+}
+
+.admin-sec-feat-cat-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: #9ca3af;
+}
+
+.admin-sec-feat-cat-search-input {
+  width: 100%;
+  padding: 6px 12px 6px 40px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #374151;
+  background: white;
+  transition: border-color 0.2s ease;
+  outline: none;
+}
+
+.admin-sec-feat-cat-add-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 7px 14px;
+  background: #0e593c;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s;
+}
+.admin-sec-feat-cat-add-btn:hover {
+  background: #047857;
+}
+
+.admin-sec-feat-cat-error {
+  color: #dc2626;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  padding: 10px 16px;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+.admin-sec-feat-cat-table-container {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  overflow-x: auto;
+  margin-top: 10px;
+}
+
+.admin-sec-feat-cat-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.admin-sec-feat-cat-table th,
+.admin-sec-feat-cat-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #f3f4f6;
+}
+.admin-sec-feat-cat-table th {
+  background: #f5f2e1;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.admin-sec-feat-cat-table td {
+  font-size: 14px;
+  color: #222;
+}
+.admin-sec-feat-cat-table tr:hover {
+  background: #f9fafb;
+}
+
+.admin-sec-feat-cat-images {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.admin-sec-feat-cat-thumb {
+  width: 48px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+}
+.admin-sec-feat-cat-noimg {
+  width: 32px;
+  height: 32px;
+  color: #9ca3af;
+}
+
+.admin-sec-feat-cat-action-btn {
+  background: none;
+  border: none;
+  color: #6b7280;
+  margin-right: 6px;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 4px;
+  border-radius: 3px;
+}
+.admin-sec-feat-cat-action-btn:hover {
+  color: #0e593c;
+  background: #f3f4f6;
+}
+
+/* Modal Styles */
+.admin-sec-feat-cat-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.18);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.admin-sec-feat-cat-modal {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px 28px 24px 28px;
+  min-width: 340px;
+  max-width: 95vw;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  position: relative;
+}
+.admin-sec-feat-cat-modal-close {
+  position: absolute;
+  top: 30px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #6b7280;
+  cursor: pointer;
+}
+.admin-sec-feat-cat-modal h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 18px;
+  color: #0e593c;
+}
+.admin-sec-feat-cat-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-;
+  color: rgb(61, 60, 60);
+}
+.admin-sec-feat-cat-form input[type="text"],
+.admin-sec-feat-cat-form input[type="number"],
+.admin-sec-feat-cat-form textarea,
+.admin-sec-feat-cat-form select {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 4px;
+  margin-bottom: 2px;
+  background: #fafafa;
+  color: #222;
+  transition: border 0.2s;
+}
+.admin-sec-feat-cat-form textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+.admin-sec-feat-cat-form input[type="file"] {
+  margin-top: 6px;
+  margin-left: 5px;
+}
+.admin-sec-feat-cat-modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+.admin-sec-feat-cat-save-btn {
+  background: #0e593c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.admin-sec-feat-cat-save-btn:disabled {
+  background: #b7cfc5;
+  cursor: not-allowed;
+}
+.admin-sec-feat-cat-cancel-btn {
+  background: #f3f4f6;
+  color: #222;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.admin-sec-feat-cat-cancel-btn:hover {
+  background: #e5e7eb;
+}
+
+/* Loader spin animation */
+.spin {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+/* Custom Delete Modal */
+.admin-sec-feat-cat-delete-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.admin-sec-feat-cat-delete-modal {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px 28px 24px 28px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+.delete-modal-icon {
+  color: #ef4444;
+  margin-bottom: 16px;
+}
+.admin-sec-feat-cat-delete-modal h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #111827;
+}
+.admin-sec-feat-cat-delete-modal p {
+  margin: 0 0 24px;
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.admin-sec-feat-cat-delete-modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.delete-cancel-btn,
+.delete-confirm-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.delete-cancel-btn {
+  background: #e5e7eb;
+  color: #111827;
+}
+.delete-cancel-btn:hover {
+  background: #d1d5db;
+}
+.delete-confirm-btn {
+  background: #ef4444;
+  color: #fff;
+}
+.delete-confirm-btn:hover {
+  background: #dc2626;
+}
+.delete-confirm-btn:disabled {
+    background: #fca5a5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 900px) {
+  .admin-sec-feat-cat-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+  }
+  .admin-sec-feat-cat-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .admin-sec-feat-cat-table {
+    min-width: 600px;
+  }
+}
+@media (max-width: 600px) {
+  .admin-sec-feat-cat-modal {
+    padding: 18px 6px;
+    min-width: 90vw;
+  }
+  .admin-sec-feat-cat-table {
+    min-width: 400px;
+  }
+  .admin-sec-feat-cat-delete-modal {
+    padding: 24px 18px;
+  }
+}
+
+.admin-sec-feat-cat-button:hover {
+  background-color: #0056b3;
+}
+
+.admin-sec-feat-cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.admin-sec-feat-cat-card {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 6px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.admin-sec-feat-cat-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.admin-sec-feat-cat-image-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.admin-sec-feat-cat-image {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.admin-sec-feat-cat-delete {
+  padding: 6px 12px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.admin-sec-feat-cat-delete:hover {
+  background-color: #b02a37;
+}

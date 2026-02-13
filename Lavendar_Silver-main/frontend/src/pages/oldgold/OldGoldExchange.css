@@ -1,0 +1,247 @@
+.oldExchange-container {
+  margin: 60px 0;
+}
+
+.old-exchange-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  margin-top: 24px;
+}
+
+.old-exchange-header-line {
+  height: 3px;
+  width: 120px;
+  border-radius: 2px;
+  margin: 0 16px;
+}
+
+.old-exchange-header-line-left {
+  background: linear-gradient(
+    to right,
+    #0e593c55 0%,
+    #0e593c22 60%,
+    transparent 100%
+  );
+  filter: blur(0.5px);
+}
+
+.old-exchange-header-line-right {
+ background: linear-gradient(
+    to left,
+    #0e593c55 0%,
+    #0e593c22 60%,
+    transparent 100%
+  );
+  filter: blur(0.5px);
+}
+
+.old-exchange-header-icon {
+  width: 8%;
+  height: 37px;
+  margin: 0 16px;
+}
+
+.old-exchange-header-content {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.old-exchange-header-title1 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Cinzel Decorative', serif;
+  color: #0E593C;
+  line-height: 18px;
+  text-align: center;
+}
+.old-exchange-header-title2 {
+  color: #bfa76f;
+  font-weight: 700;
+}
+.old-exchange-header-title3 {
+  font-size: 31px;
+  color: #2d4c36;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.old-exchange-header-desc {
+  text-align: center;
+  color: #444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 3%;
+  font-family: "Open Sans", sans-;
+  padding: 0 296px;
+  margin-bottom: 32px;
+  margin-top: 12px;
+}
+
+.old-exchange-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 42px;
+  margin-bottom: 40px;
+  padding: 0 30px;
+}
+
+.old-exchange-card {
+  background: #faf8f2;
+  border-radius: 6px;
+  flex: 1;
+  padding: 32px 18px 24px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 260px;
+  width: 20%;
+  box-shadow: 0 0 3px #b0afaf;
+}
+
+.old-exchange-card-imgwrap {
+  width: 60px;
+  height: 60px;
+  background: #712A3D;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.old-exchange-card-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.old-exchange-card-title {
+  font-size: 20px;
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  color: #0E593C;
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.old-exchange-card-line {
+  width: 43px;
+  height: 4px;
+  background: #712A3D;
+  margin: 6px 0 10px 0;
+  border-radius: 10px;
+}
+
+.old-exchange-card-desc {
+  color: #000000;
+  font-size: 13px;
+  font-family: "Open Sans", sans-;
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 3%;
+  padding: 0 18px;
+}
+
+.old-exchange-banner-container{
+    background: #C5A97E33;
+    height: 163px;
+    border: 1px solid #d6e3d3;
+    border-radius: 10px;
+     margin: 32px 27px;
+     /* display: flex; */
+ 
+
+}
+
+.old-exchange-banner {
+  border-radius: 6px;
+  border: 1px solid #0E593C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0px;
+  margin: 10px;
+  gap: 16px;
+}
+
+.old-exchange-banner-item {
+  flex: 1;
+  text-align: center;
+}
+
+.old-exchange-banner-item h4 {
+  font-size: 36px;
+  font-family: "Cinzel", serif;
+  color: #0E593C;
+  font-weight: 700;
+}
+
+.old-exchange-banner-item p {
+  color: #000000;
+  font-size: 14px;
+  font-family: "Open Sans", sans-;
+  font-weight: 400;
+}
+
+.old-exchange-diamond-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+@media(max-width: 768px){
+    .old-exchange-header-desc{
+        padding: 0 4px;
+        font-size: 12px;
+        margin-top: -10px;
+    }
+    .old-exchange-banner-container{
+        height: 526px;
+        margin: 32px 10px;
+    }
+    .old-exchange-banner{
+        flex-direction: column;
+        height: 500px;
+        padding-top: 60px;
+    }
+    .old-exchange-cards{
+        flex-direction: column;
+    }
+    .old-exchange-card{
+        width: 100%;
+    }
+
+    .old-exchange-header-icon {
+    width: 18%;
+    height: 24px;
+}
+.old-exchange-card-title{
+    font-size: 17px;
+}
+.old-exchange-header-title1{
+    font-size: 20px;
+}
+.old-exchange-header-title3{
+    font-size: 26px;
+    margin-top: 2px;
+}
+.old-exchange-card-desc {
+  font-size: 12px;
+}
+.old-exchange-header-line{
+  width: 34px;
+}
+.old-exchange-header-content{
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+}

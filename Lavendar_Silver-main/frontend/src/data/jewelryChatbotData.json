@@ -1,0 +1,228 @@
+{
+  "welcome_message": "Hello! Welcome to Lavender Silver. I'm here to help you with any questions about our jewelry collection, services, or policies. How can I assist you today?",
+  "fallback_message": "I apologize, but I couldn't understand your question. Could you please choose from the options below?",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What types of jewelry do you offer?",
+      "answer": "We offer a comprehensive collection including:\n• Gold Jewelry (22K, 18K, 14K)\n• Diamond Jewelry\n• Silver Jewelry\n• Platinum Jewelry\n• Gemstone Jewelry\n• Pearl Jewelry\n• Designer Collections\n\nYou can browse our complete collection in our shop section!",
+      "keywords": ["types", "jewelry", "offer", "collection", "what", "kinds", "available"],
+      "follow_up": [
+        "Would you like to see our gold collection?",
+        "Interested in diamond jewelry?",
+        "Looking for silver pieces?"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "How can I check the purity of gold jewelry?",
+      "answer": "We provide multiple ways to verify gold purity:\n\n• **Hallmark Certificate**: All our gold jewelry comes with BIS hallmark certification\n• **Purity Testing**: Visit our store for free purity testing\n• **Digital Gold**: Track your gold purchases through our digital platform\n• **Certification**: Each piece includes detailed purity information\n\nOur gold is certified by government-approved testing centers.",
+      "keywords": ["purity", "gold", "check", "verify", "hallmark", "certificate", "testing", "real", "authentic"],
+      "follow_up": [
+        "Would you like to know about our hallmark certification?",
+        "Interested in our digital gold platform?",
+        "Need help understanding gold purity marks?"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "What are your payment options?",
+      "answer": "We offer multiple secure payment options:\n\n• **Cash Payment**\n• **Credit/Debit Cards**\n• **UPI Payments**\n• **EMI Options** (3, 6, 12 months)\n• **Bank Transfer**\n• **Digital Wallets** (Paytm, PhonePe, etc.)\n• **Gold Exchange** (Old gold for new)\n\nWe also provide special financing options for premium collections.",
+      "keywords": ["payment", "pay", "options", "methods", "emi", "cash", "card", "upi", "transfer", "wallet"],
+      "follow_up": [
+        "Would you like to know about EMI options?",
+        "Interested in gold exchange?",
+        "Need help with payment process?"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Do you provide gold exchange services?",
+      "answer": "Yes! We offer comprehensive gold exchange services:\n\n• **Old Gold Exchange**: Exchange your old jewelry for new pieces\n• **Purity Assessment**: Free purity testing of your old gold\n• **Fair Valuation**: Transparent pricing based on current market rates\n• **Exchange Benefits**: Special discounts on new purchases\n• **Digital Gold Exchange**: Convert physical gold to digital\n\nVisit our store with your old jewelry for a free valuation!",
+      "keywords": ["exchange", "old gold", "trade", "swap", "exchange rate", "valuation", "convert"],
+      "follow_up": [
+        "Would you like to know our exchange rates?",
+        "Need help with gold valuation?",
+        "Interested in digital gold conversion?"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "What is your return and exchange policy?",
+      "answer": "Our customer-friendly return policy:\n\n• **7-Day Return**: Return within 7 days if not satisfied\n• **Size Exchange**: Free size exchange within 30 days\n• **Quality Issues**: Immediate replacement for quality problems\n• **Exchange Options**: Exchange for other jewelry pieces\n• **Refund Process**: Full refund to original payment method\n\nNote: Custom-made jewelry and sale items have different policies.",
+      "keywords": ["return", "exchange", "policy", "refund", "replace", "size", "custom", "sale"],
+      "follow_up": [
+        "Need help with a return?",
+        "Want to exchange for different size?",
+        "Have quality concerns?"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "How do I care for my jewelry?",
+      "answer": "Essential jewelry care tips:\n\n**Daily Care:**\n• Store in separate boxes to prevent scratches\n• Avoid contact with perfumes and chemicals\n• Clean with soft cloth regularly\n\n**Cleaning:**\n• Use mild soap and warm water\n• Professional cleaning recommended annually\n• Avoid harsh chemicals\n\n**Storage:**\n• Keep in dry, cool place\n• Use anti-tarnish strips\n• Regular professional inspection\n\nWe offer free cleaning services for our customers!",
+      "keywords": ["care", "maintain", "clean", "store", "preserve", "protect", "cleaning", "maintenance"],
+      "follow_up": [
+        "Would you like our cleaning service?",
+        "Need professional inspection?",
+        "Interested in jewelry insurance?"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Do you provide jewelry insurance?",
+      "answer": "Yes, we offer comprehensive jewelry insurance:\n\n• **Purchase Protection**: Covers damage, loss, theft\n• **Home Insurance**: Coverage for jewelry at home\n• **Travel Insurance**: Protection while traveling\n• **Appraisal Services**: Professional valuation for insurance\n• **Claim Support**: Assistance with insurance claims\n\nOur insurance partners provide competitive rates and quick claim processing.",
+      "keywords": ["insurance", "protect", "cover", "theft", "loss", "damage", "appraisal", "claim"],
+      "follow_up": [
+        "Would you like insurance quotes?",
+        "Need jewelry appraisal?",
+        "Interested in travel protection?"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "What are your delivery options?",
+      "answer": "We offer multiple delivery options:\n\n• **Free Home Delivery**: For orders above ₹10,000\n• **Store Pickup**: Collect from nearest store\n• **Express Delivery**: Same-day delivery in select cities\n• **Secure Delivery**: Insured and tracked delivery\n• **International Shipping**: Available for select items\n\nDelivery time: 2-5 business days depending on location.",
+      "keywords": ["delivery", "shipping", "pickup", "express", "home delivery", "time", "track"],
+      "follow_up": [
+        "Check delivery to your area?",
+        "Need express delivery?",
+        "Want to track your order?"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "How can I track my order?",
+      "answer": "Track your order easily:\n\n• **Order Number**: Use your order number on our website\n• **SMS Updates**: Receive delivery updates via SMS\n• **Email Tracking**: Detailed tracking via email\n• **Customer Care**: Call us for order status\n• **App Tracking**: Use our mobile app for real-time updates\n\nYou'll receive tracking details immediately after order confirmation.",
+      "keywords": ["track", "order", "status", "where", "when", "delivery", "shipping", "update"],
+      "follow_up": [
+        "Need help finding your order number?",
+        "Want to update delivery address?",
+        "Need delivery rescheduling?"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Do you offer customization services?",
+      "answer": "Yes! We provide comprehensive customization:\n\n• **Design Your Own**: Create unique jewelry pieces\n• **Size Customization**: Perfect fit for rings and bangles\n• **Engraving Services**: Personal messages and names\n• **Gemstone Selection**: Choose your preferred stones\n• **Metal Options**: Gold, silver, platinum customization\n• **Design Consultation**: Expert guidance from our designers\n\nCustom orders take 15-30 days for completion.",
+      "keywords": ["custom", "customize", "design", "personalize", "engrave", "size", "unique", "special"],
+      "follow_up": [
+        "Would you like a design consultation?",
+        "Need help with customization options?",
+        "Want to see custom design examples?"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "What are your business hours?",
+      "answer": "Our store hours:\n\n**Weekdays (Monday - Friday):**\n• 10:00 AM - 8:00 PM\n\n**Weekends (Saturday - Sunday):**\n• 10:00 AM - 9:00 PM\n\n**Online Support:**\n• 24/7 customer support\n• Live chat available\n• Emergency contact for urgent matters\n\nWe're closed on major national holidays.",
+      "keywords": ["hours", "timing", "open", "close", "business", "time", "when", "available"],
+      "follow_up": [
+        "Need appointment booking?",
+        "Want to visit our store?",
+        "Need emergency assistance?"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "How do I become a VIP member?",
+      "answer": "Join our VIP membership program:\n\n**Benefits:**\n• Exclusive discounts and offers\n• Priority customer service\n• Early access to new collections\n• Special events and previews\n• Birthday and anniversary gifts\n• Free cleaning and maintenance\n\n**How to Join:**\n• Purchase above ₹50,000 in a year\n• Refer 5 friends who make purchases\n• Special invitation for loyal customers\n\nVIP members get 10-20% additional discounts!",
+      "keywords": ["vip", "member", "membership", "loyalty", "benefits", "discount", "exclusive", "premium"],
+      "follow_up": [
+        "Check your membership status?",
+        "Want to know current VIP benefits?",
+        "Need help with membership upgrade?"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "What certifications do you provide?",
+      "answer": "We provide comprehensive certifications:\n\n• **BIS Hallmark**: Government-approved gold purity\n• **IGI Certification**: International Gemological Institute\n• **GIA Certification**: Gemological Institute of America\n• **Diamond Certification**: 4C grading reports\n• **Gemstone Certification**: Authenticity and quality\n• **Platinum Certification**: Purity verification\n\nAll certifications are internationally recognized and verifiable online.",
+      "keywords": ["certificate", "certification", "hallmark", "igi", "gia", "diamond", "gemstone", "quality"],
+      "follow_up": [
+        "Need help verifying certificates?",
+        "Want to understand certification details?",
+        "Looking for specific gemstone certification?"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "Do you offer wedding jewelry collections?",
+      "answer": "Yes! Our exclusive wedding collections include:\n\n• **Bridal Sets**: Complete wedding jewelry sets\n• **Traditional Designs**: Classic Indian wedding jewelry\n• **Modern Bridal**: Contemporary wedding pieces\n• **Family Heirlooms**: Timeless designs\n• **Custom Bridal**: Personalized wedding jewelry\n• **Wedding Packages**: Complete bridal solutions\n\nWe also offer wedding consultation and styling services!",
+      "keywords": ["wedding", "bridal", "marriage", "traditional", "heirloom", "bridal set", "wedding jewelry"],
+      "follow_up": [
+        "Would you like to see bridal collections?",
+        "Need wedding jewelry consultation?",
+        "Interested in custom bridal designs?"
+      ]
+    },
+    {
+      "id": 15,
+      "question": "How do I contact customer support?",
+      "answer": "Multiple ways to reach our customer support:\n\n• **Phone**: 1800-LAVENDER-HELP (24/7)\n• **Email**: support@lavendersilver.com\n• **Live Chat**: Available on our website\n• **WhatsApp**: +91-XXXXXXXXXX\n• **Store Visit**: Visit any of our stores\n• **Social Media**: Facebook, Instagram, Twitter\n\nAverage response time: 2-4 hours for emails, immediate for calls.",
+      "keywords": ["contact", "support", "help", "phone", "email", "customer service", "reach", "call"],
+      "follow_up": [
+        "Need immediate assistance?",
+        "Want to schedule a call?",
+        "Need help with specific issue?"
+      ]
+    }
+  ],
+  "follow_up_responses": {
+    "Would you like to see our gold collection?": "Our gold collection features:\n\n• **22K Gold**: Pure traditional jewelry\n• **18K Gold**: Modern designs with durability\n• **14K Gold**: Contemporary styles\n• **Antique Gold**: Vintage-inspired pieces\n• **Diamond Gold**: Gold with diamond accents\n\nVisit our gold section to explore 500+ designs!",
+    "Interested in diamond jewelry?": "Our diamond collection includes:\n\n• **Solitaire Rings**: Classic diamond rings\n• **Diamond Sets**: Necklace, earrings, and rings\n• **Diamond Pendants**: Elegant pendant designs\n• **Diamond Earrings**: Studs and danglers\n• **Diamond Bangles**: Luxury bangle designs\n\nAll diamonds are certified with IGI/GIA reports!",
+    "Looking for silver pieces?": "Our silver jewelry collection offers:\n\n• **Silver Necklaces**: Traditional and modern designs\n• **Silver Earrings**: Studs, hoops, and danglers\n• **Silver Rings**: Fashion and statement rings\n• **Silver Bangles**: Traditional and contemporary\n• **Silver Anklets**: Elegant foot jewelry\n\nPerfect for daily wear and special occasions!",
+    "Would you like to know about our hallmark certification?": "Our hallmark certification process:\n\n• **BIS Hallmark**: Government-approved purity mark\n• **Testing Centers**: Authorized by Bureau of Indian Standards\n• **Purity Verification**: 22K, 18K, 14K certification\n• **Quality Assurance**: Each piece tested individually\n• **Certificate Included**: Detailed purity certificate\n\n100% authentic and verified gold jewelry!",
+    "Interested in our digital gold platform?": "Our digital gold platform features:\n\n• **Gold Savings**: Start with as little as ₹1\n• **Secure Storage**: Bank-grade security\n• **Real-time Tracking**: Monitor your gold investment\n• **Easy Redemption**: Convert to physical gold anytime\n• **No Making Charges**: Pure gold investment\n\nStart your digital gold journey today!",
+    "Need help understanding gold purity marks?": "Understanding gold purity marks:\n\n• **916 (22K)**: 91.6% pure gold\n• **750 (18K)**: 75% pure gold\n• **585 (14K)**: 58.5% pure gold\n• **BIS Mark**: Government certification\n• **Year Mark**: Manufacturing year\n• **Center Mark**: Testing center code\n\nAlways look for BIS hallmark for authenticity!",
+    "Would you like to know about EMI options?": "Our EMI options include:\n\n• **0% EMI**: Available on select cards\n• **3 Months EMI**: No extra charges\n• **6 Months EMI**: Low processing fee\n• **12 Months EMI**: Flexible payment\n• **Credit Card EMI**: All major banks accepted\n• **No Cost EMI**: On purchases above ₹5,000\n\nCheck your card eligibility at checkout!",
+    "Interested in gold exchange?": "Our gold exchange process:\n\n• **Free Valuation**: Professional assessment\n• **Current Market Rate**: Transparent pricing\n• **No Hidden Charges**: Clear exchange terms\n• **Instant Exchange**: Same day processing\n• **Exchange Benefits**: Special discounts on new purchases\n• **Digital Exchange**: Convert to digital gold\n\nVisit any store for free valuation!",
+    "Need help with payment process?": "Our payment process is simple:\n\n• **Online Payment**: Secure gateway\n• **Store Payment**: Multiple options available\n• **EMI Processing**: Instant approval\n• **Gold Exchange**: Seamless integration\n• **Digital Wallets**: Quick payments\n• **Bank Transfer**: Direct transfer option\n\nAll payments are secure and encrypted!",
+    "Would you like to know our exchange rates?": "Our current exchange rates:\n\n• **Gold Rate**: Based on current market price\n• **Making Charges**: Deducted from exchange value\n• **Purity Assessment**: Free testing included\n• **Exchange Bonus**: 5-10% extra on new purchases\n• **Digital Conversion**: Convert to digital gold\n• **Instant Payment**: Same day processing\n\nRates updated daily based on market!",
+    "Need help with gold valuation?": "Our gold valuation process:\n\n• **Professional Assessment**: Expert evaluation\n• **Purity Testing**: Free testing included\n• **Weight Verification**: Accurate measurement\n• **Market Rate**: Current gold prices\n• **Detailed Report**: Complete valuation certificate\n• **No Obligation**: Free valuation service\n\nVisit any store for free valuation!",
+    "Interested in digital gold conversion?": "Convert to digital gold easily:\n\n• **Physical to Digital**: Convert jewelry to digital\n• **Secure Storage**: Bank-grade security\n• **Real-time Value**: Track market prices\n• **Easy Redemption**: Convert back anytime\n• **No Storage Fees**: Free digital storage\n• **Investment Growth**: Potential appreciation\n\nStart your digital gold journey!",
+    "Need help with a return?": "Our return process:\n\n• **7-Day Window**: Return within 7 days\n• **Original Condition**: Unused and undamaged\n• **Original Packaging**: Complete with tags\n• **Return Authorization**: Contact customer care\n• **Free Pickup**: We'll collect from your location\n• **Full Refund**: 100% money back\n\nHassle-free return process!",
+    "Want to exchange for different size?": "Size exchange process:\n\n• **30-Day Window**: Exchange within 30 days\n• **Free Exchange**: No additional charges\n• **Size Verification**: Professional fitting\n• **Multiple Options**: Choose from available sizes\n• **Quick Processing**: Same day exchange\n• **Quality Assurance**: All pieces verified\n\nPerfect fit guaranteed!",
+    "Have quality concerns?": "Quality assurance process:\n\n• **Immediate Replacement**: For quality issues\n• **Expert Inspection**: Professional assessment\n• **Quality Certificate**: Detailed quality report\n• **Warranty Coverage**: Extended warranty available\n• **Repair Services**: Professional repair\n• **Customer Support**: 24/7 assistance\n\nYour satisfaction is our priority!",
+    "Would you like our cleaning service?": "Our professional cleaning service:\n\n• **Free Cleaning**: For all customers\n• **Professional Equipment**: Advanced cleaning tools\n• **Safe Chemicals**: Jewelry-safe cleaning solutions\n• **Inspection Included**: Quality check after cleaning\n• **Quick Service**: 30-minute cleaning\n• **Annual Service**: Recommended yearly cleaning\n\nKeep your jewelry shining!",
+    "Need professional inspection?": "Professional inspection services:\n\n• **Free Inspection**: For all jewelry\n• **Expert Assessment**: Certified gemologists\n• **Detailed Report**: Complete condition report\n• **Maintenance Tips**: Care recommendations\n• **Repair Estimates**: If repairs needed\n• **Quality Certification**: Updated certificates\n\nEnsure your jewelry's condition!",
+    "Interested in jewelry insurance?": "Jewelry insurance options:\n\n• **Purchase Protection**: Covers new purchases\n• **Home Insurance**: Coverage at home\n• **Travel Insurance**: Protection while traveling\n• **Comprehensive Coverage**: Full protection plan\n• **Quick Claims**: Fast claim processing\n• **Competitive Rates**: Best market prices\n\nProtect your precious jewelry!",
+    "Would you like insurance quotes?": "Get insurance quotes:\n\n• **Free Quotes**: No obligation\n• **Multiple Plans**: Choose best coverage\n• **Custom Plans**: Tailored to your needs\n• **Instant Quotes**: Get quotes immediately\n• **Expert Advice**: Insurance specialists\n• **Easy Application**: Simple process\n\nProtect your investment today!",
+    "Need jewelry appraisal?": "Professional appraisal services:\n\n• **Certified Appraisers**: Expert evaluation\n• **Detailed Reports**: Complete documentation\n• **Insurance Value**: For insurance purposes\n• **Market Value**: Current market assessment\n• **Quality Assessment**: Condition evaluation\n• **Legal Documentation**: Official certificates\n\nGet accurate jewelry valuation!",
+    "Interested in travel protection?": "Travel protection for jewelry:\n\n• **Travel Insurance**: Covers jewelry while traveling\n• **Safe Storage**: Hotel safe recommendations\n• **Travel Tips**: Security advice\n• **Emergency Support**: 24/7 assistance\n• **Claim Support**: Help with claims\n• **Global Coverage**: Worldwide protection\n\nTravel safely with your jewelry!",
+    "Check delivery to your area?": "Delivery area check:\n\n• **Free Delivery**: Above ₹10,000\n• **Pan India**: Delivery across India\n• **Express Delivery**: Same day in select cities\n• **Store Pickup**: Collect from nearest store\n• **International**: Available for select items\n• **Tracking**: Real-time delivery updates\n\nCheck delivery to your pincode!",
+    "Need express delivery?": "Express delivery options:\n\n• **Same Day**: In select cities\n• **Next Day**: Across major cities\n• **Priority Delivery**: Premium service\n• **Secure Delivery**: Insured and tracked\n• **Time Slots**: Choose delivery time\n• **SMS Updates**: Real-time notifications\n\nGet your jewelry quickly!",
+    "Want to track your order?": "Track your order:\n\n• **Order Number**: Use to track\n• **SMS Updates**: Delivery notifications\n• **Email Tracking**: Detailed updates\n• **App Tracking**: Mobile app updates\n• **Customer Care**: Call for status\n• **Real-time**: Live tracking available\n\nTrack your order easily!",
+    "Need help finding your order number?": "Find your order number:\n\n• **Email Confirmation**: Check your email\n• **SMS Confirmation**: Check your phone\n• **Account Orders**: Login to your account\n• **Customer Care**: Call for assistance\n• **Order History**: View past orders\n• **Quick Search**: Search by date/amount\n\nWe'll help you find it!",
+    "Want to update delivery address?": "Update delivery address:\n\n• **Before Dispatch**: Free address change\n• **After Dispatch**: Contact customer care\n• **Online Update**: Through your account\n• **Phone Update**: Call customer care\n• **Email Update**: Send email request\n• **Quick Process**: Same day update\n\nUpdate address easily!",
+    "Need delivery rescheduling?": "Reschedule delivery:\n\n• **Free Rescheduling**: No extra charges\n• **Multiple Dates**: Choose new date\n• **Time Slots**: Select preferred time\n• **SMS Confirmation**: Reschedule confirmation\n• **Easy Process**: Quick rescheduling\n• **Flexible Options**: Multiple reschedule options\n\nReschedule at your convenience!",
+    "Would you like a design consultation?": "Design consultation services:\n\n• **Free Consultation**: Expert guidance\n• **Custom Designs**: Create unique pieces\n• **Designer Meeting**: Meet our designers\n• **3D Visualization**: See designs before making\n• **Material Selection**: Choose metals and stones\n• **Budget Planning**: Work within your budget\n\nCreate your dream jewelry!",
+    "Need help with customization options?": "Customization options:\n\n• **Size Customization**: Perfect fit\n• **Engraving**: Personal messages\n• **Stone Selection**: Choose gemstones\n• **Metal Options**: Gold, silver, platinum\n• **Design Modifications**: Adjust existing designs\n• **Personal Touch**: Make it unique\n\nCustomize to your preferences!",
+    "Want to see custom design examples?": "Custom design examples:\n\n• **Wedding Rings**: Personalized wedding bands\n• **Name Necklaces**: Custom name jewelry\n• **Birthstone Jewelry**: Personal birthstones\n• **Engraved Pieces**: Special messages\n• **Family Jewelry**: Heirloom designs\n• **Modern Custom**: Contemporary styles\n\nView our custom gallery!",
+    "Need appointment booking?": "Book an appointment:\n\n• **Online Booking**: Easy online scheduling\n• **Phone Booking**: Call to schedule\n• **WhatsApp Booking**: Message to book\n• **Store Visit**: Walk-in appointments\n• **Expert Consultation**: Meet specialists\n• **Flexible Timing**: Choose your time\n\nBook your appointment today!",
+    "Want to visit our store?": "Visit our stores:\n\n• **Multiple Locations**: Across India\n• **Store Locator**: Find nearest store\n• **Store Hours**: Extended hours\n• **Expert Staff**: Knowledgeable team\n• **Showroom Experience**: Premium experience\n• **Parking Available**: Free parking\n\nVisit us for best experience!",
+    "Need emergency assistance?": "Emergency assistance:\n\n• **24/7 Helpline**: Always available\n• **Emergency Contact**: Immediate response\n• **Urgent Support**: Priority handling\n• **Quick Resolution**: Fast problem solving\n• **Expert Help**: Professional assistance\n• **Multiple Channels**: Call, email, chat\n\nWe're here when you need us!",
+    "Check your membership status?": "Check VIP membership:\n\n• **Online Check**: Login to your account\n• **Points Balance**: View loyalty points\n• **Tier Status**: Current membership level\n• **Benefits Available**: Active benefits\n• **Upgrade Options**: Next tier requirements\n• **Customer Care**: Call for assistance\n\nCheck your VIP status!",
+    "Want to know current VIP benefits?": "Current VIP benefits:\n\n• **Exclusive Discounts**: 10-20% off\n• **Priority Service**: Fast-track support\n• **Early Access**: New collection previews\n• **Special Events**: VIP-only events\n• **Birthday Gifts**: Special birthday offers\n• **Free Services**: Cleaning and maintenance\n\nEnjoy VIP privileges!",
+    "Need help with membership upgrade?": "Membership upgrade process:\n\n• **Purchase Requirements**: Spend to upgrade\n• **Referral Program**: Refer friends\n• **Loyalty Points**: Earn and redeem\n• **Tier Benefits**: Higher tier advantages\n• **Upgrade Timeline**: Automatic upgrades\n• **Customer Support**: Upgrade assistance\n\nUpgrade your membership!",
+    "Need help verifying certificates?": "Certificate verification:\n\n• **Online Verification**: Check online\n• **QR Code Scan**: Scan certificate QR\n• **Customer Care**: Call for verification\n• **Store Verification**: Visit any store\n• **Expert Verification**: Professional check\n• **Documentation**: Keep certificates safe\n\nVerify your certificates!",
+    "Want to understand certification details?": "Certification details:\n\n• **BIS Hallmark**: Government certification\n• **IGI/GIA**: Diamond certification\n• **Purity Marks**: Gold purity indicators\n• **Quality Grades**: Quality assessment\n• **Testing Centers**: Authorized centers\n• **International Standards**: Global recognition\n\nUnderstand your certificates!",
+    "Looking for specific gemstone certification?": "Gemstone certification:\n\n• **Natural Gemstones**: Authenticity verified\n• **Quality Grades**: Color, clarity, cut\n• **Origin Certificates**: Source verification\n• **Treatment Disclosure**: Any treatments\n• **Expert Assessment**: Professional evaluation\n• **Detailed Reports**: Complete documentation\n\nCertified gemstones only!",
+    "Would you like to see bridal collections?": "Our bridal collections:\n\n• **Traditional Bridal**: Classic Indian designs\n• **Modern Bridal**: Contemporary styles\n• **Bridal Sets**: Complete jewelry sets\n• **Wedding Rings**: Traditional and modern\n• **Family Heirlooms**: Timeless pieces\n• **Custom Bridal**: Personalized designs\n\nPerfect for your special day!",
+    "Need wedding jewelry consultation?": "Wedding consultation:\n\n• **Free Consultation**: Expert guidance\n• **Budget Planning**: Work within budget\n• **Style Selection**: Choose your style\n• **Custom Designs**: Create unique pieces\n• **Family Traditions**: Honor traditions\n• **Complete Solution**: Full bridal jewelry\n\nPlan your perfect wedding jewelry!",
+    "Interested in custom bridal designs?": "Custom bridal designs:\n\n• **Personalized Designs**: Unique creations\n• **Family Integration**: Include family jewelry\n• **Modern Touch**: Contemporary elements\n• **Traditional Elements**: Classic designs\n• **Budget Friendly**: Various price ranges\n• **Expert Craftsmanship**: Skilled artisans\n\nCreate your dream bridal jewelry!",
+    "Need immediate assistance?": "For immediate assistance:\n\n• **Call Now**: 1800-LAVENDER-HELP (24/7)\n• **WhatsApp**: +91-XXXXXXXXXX\n• **Live Chat**: Available on website\n• **Emergency Support**: Priority handling\n• **Quick Resolution**: Fast problem solving\n• **Expert Team**: Professional assistance\n\nWe're here to help immediately!",
+    "Want to schedule a call?": "Schedule a call:\n\n• **Online Booking**: Schedule online\n• **Phone Booking**: Call to schedule\n• **WhatsApp Booking**: Message to schedule\n• **Preferred Time**: Choose your time\n• **Expert Call**: Specialist consultation\n• **Follow-up**: Call confirmation\n\nSchedule your call today!",
+    "Need help with specific issue?": "For specific issues:\n\n• **Detailed Support**: Expert assistance\n• **Problem Resolution**: Quick solutions\n• **Escalation**: If needed\n• **Follow-up**: Continuous support\n• **Documentation**: Keep records\n• **Satisfaction**: Ensure resolution\n\nWe'll resolve your issue!"
+  },
+  "quick_options": [
+    "What types of jewelry do you offer?",
+    "How can I check gold purity?",
+    "Payment options",
+    "Gold exchange services",
+    "Return policy",
+    "Jewelry care tips",
+    "Track my order",
+    "Contact support"
+  ]
+} 
